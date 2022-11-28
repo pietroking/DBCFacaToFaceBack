@@ -1,0 +1,1 @@
+{"uid":"ab17fc5a4eb3bca4b216b548c7f9fcbc","children":[{"name":"pesquisa","uid":"89712dd2504d2ef","parentUid":"ab17fc5a4eb3bca4b216b548c7f9fcbc","status":"passed","time":{"start":1669602526392,"stop":1669602528725,"duration":2333},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[]}],"name":"timeline"}

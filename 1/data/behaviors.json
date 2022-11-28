@@ -1,0 +1,1 @@
+{"uid":"b1a8273437954620fa374b796ffaacdd","children":[{"name":"pesquisa","uid":"89712dd2504d2ef","parentUid":"b1a8273437954620fa374b796ffaacdd","status":"passed","time":{"start":1669602526392,"stop":1669602528725,"duration":2333},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[]}],"name":"behaviors"}
