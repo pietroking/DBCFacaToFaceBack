@@ -1,0 +1,39 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "ajv": "^8.11.2",
+    "cypress": "^9.5.4"
+  },
+  "scripts": {
+
+    "cy:run": "npx cypress run --config video=false --env allure=true",
+    
+    "clean:folders": "rm -R -f allure-report/* && rm -R -f allure-results/*",
+    
+    "allure:report": "cp -RT cypress/fixtures/allure-results-cp allure-results && allure generate allure-results && npm run copia:widgets && allure open allure-report",
+    
+    "beforetest": "npm run clean:folders",
+    
+    "aftertest": "npm run allure:report",
+
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+
+    "copia:widgets":"cp -RT cypress/fixtures/widgets allure-report/widgets",
+
+    "tests": "npm run cy:run && npm run aftertest",
+
+    "allure:history": "rm -R -f allure-results/* && mv -f allure-report/history allure-results/history && rm -r allure-report || true",
+
+    "start":"npm run allure:history && npm run tests"
+  }
+}
