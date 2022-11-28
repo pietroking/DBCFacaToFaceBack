@@ -1,5 +1,5 @@
 context("teste", () => {
-    it('pesquisa', () => {
+    it('pesquisa2222', () => {
         cy.visit("https://www.google.com/")
     });
 })
