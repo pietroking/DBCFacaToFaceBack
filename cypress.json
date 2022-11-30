@@ -1,1 +1,5 @@
-{}
+{
+    "env": {
+        "API_BASE": "http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back"
+    }
+}

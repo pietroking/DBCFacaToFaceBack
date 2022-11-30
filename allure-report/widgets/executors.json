@@ -1,5 +1,7 @@
 [
     {
-        "name":"Pietro Bianchi"
+        "name":"Pietro Bianchi",
+        "buildName":"FaceToFace",
+        "type":"cypress"
     }
 ]

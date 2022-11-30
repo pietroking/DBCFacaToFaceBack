@@ -1,0 +1,15 @@
+{
+    "nomeCompleto": "testeapiauto",
+    "cidade": "mudanca",
+    "estado": "mudanca",
+    "email": "teste@teste.com.br",
+    "trilha": {
+      "nome": "BACKEND"
+    },
+    "perfis": [
+      {
+        "nome": "ROLE_GESTAO"
+      }
+    ],
+    "ativo": "T"
+  }

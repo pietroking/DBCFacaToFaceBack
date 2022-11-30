@@ -1,0 +1,15 @@
+{
+    "nomeCompleto": "testeapiauto",
+    "cidade": "teste",
+    "estado": "teste",
+    "email": "teste@teste.com.br",
+    "trilha": {
+      "nome": "string"
+    },
+    "perfis": [
+      {
+        "nome": "ROLE_INSTRUTOR"
+      }
+    ],
+    "ativo": "T"
+  }
