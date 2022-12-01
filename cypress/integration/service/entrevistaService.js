@@ -3,7 +3,7 @@ let token;
 
 before(() => {
     cy.login().should((response) => {
-        expect(response.status).to.eq(200);
+        expect(response.status).to.eq(201);
         token = response.body;
     });
 })
@@ -63,7 +63,7 @@ export default class EntrevistaService{
             method: 'PUT',
             url:`${baseUrl}/entrevista/atualizar-entrevista/${idEntrevista}`,
             headers:{
-                authorization: token
+                authorization: token,
             },
             qs: {
                 "legenda":`${legenda}`

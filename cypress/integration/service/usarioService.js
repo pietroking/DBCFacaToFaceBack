@@ -3,7 +3,7 @@ let token;
 
 before(() => {
     cy.login().should((response) => {
-        expect(response.status).to.eq(200);
+        expect(response.status).to.eq(201);
         token = response.body;
     });
 })
@@ -133,12 +133,18 @@ export default class UsuarioService{
             method: 'PUT',
             url:`${baseUrl}/usuario/upload-foto`,
             headers:{
-                authorization: token
+                authorization: token,
+                'content-type': 'multipart/form-data'
             },
             qs: {
                 "email":`${email}`
             },
-            body: foto,
+            multipart: {
+                'Content-Disposition': 'form-data',  
+                'filename': foto,
+                'Content-Type': 'application/octet-stream'
+            }, 
+            body:foto,
             failOnStatusCode: false
         }).as('response').get('@response')
     }

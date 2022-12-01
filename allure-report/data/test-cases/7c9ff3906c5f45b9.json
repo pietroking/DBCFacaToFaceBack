@@ -1,0 +1,586 @@
+{
+  "uid" : "7c9ff3906c5f45b9",
+  "name" : "DELETE - Tornar usuario inativo",
+  "fullName" : "DELETE - Tornar usuario inativo",
+  "historyId" : "b31ee13630f27b71c96764870d718ff0",
+  "time" : {
+    "start" : 1669861912958,
+    "stop" : 1669861913895,
+    "duration" : 937
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1669861901803,
+        "stop" : 1669861902115,
+        "duration" : 312
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+        "time" : {
+          "start" : 1669861901805,
+          "stop" : 1669861902110,
+          "duration" : 305
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1669861902110,
+          "stop" : 1669861902111,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1669861902111,
+          "stop" : 1669861902115,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "assert expected **201** to equal **201**",
+        "time" : {
+          "start" : 1669861902115,
+          "stop" : 1669861902115,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "201"
+        }, {
+          "name" : "expected",
+          "value" : "201"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 4
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 5
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1669861902117,
+        "stop" : 1669861902309,
+        "duration" : 192
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+        "time" : {
+          "start" : 1669861902117,
+          "stop" : 1669861902306,
+          "duration" : 189
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1669861902306,
+          "stop" : 1669861902307,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1669861902307,
+          "stop" : 1669861902309,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "assert expected **201** to equal **201**",
+        "time" : {
+          "start" : 1669861902309,
+          "stop" : 1669861902309,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "201"
+        }, {
+          "name" : "expected",
+          "value" : "201"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 4
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 5
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/usuario",
+      "time" : {
+        "start" : 1669861912963,
+        "stop" : 1669861913668,
+        "duration" : 705
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1669861913668,
+        "stop" : 1669861913668,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1669861913668,
+        "stop" : 1669861913669,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "wrap Object{9}",
+      "time" : {
+        "start" : 1669861913670,
+        "stop" : 1669861913670,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"usuario\")",
+      "time" : {
+        "start" : 1669861913670,
+        "stop" : 1669861913670,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @usuario",
+      "time" : {
+        "start" : 1669861913670,
+        "stop" : 1669861913670,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/usuario/362",
+      "time" : {
+        "start" : 1669861913671,
+        "stop" : 1669861913748,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1669861913748,
+        "stop" : 1669861913748,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1669861913748,
+        "stop" : 1669861913749,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **204** to equal **204**",
+      "time" : {
+        "start" : 1669861913749,
+        "stop" : 1669861913749,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "204"
+      }, {
+        "name" : "expected",
+        "value" : "204"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @usuario",
+      "time" : {
+        "start" : 1669861913749,
+        "stop" : 1669861913749,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/usuario/id",
+      "time" : {
+        "start" : 1669861913750,
+        "stop" : 1669861913819,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1669861913819,
+        "stop" : 1669861913819,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1669861913819,
+        "stop" : 1669861913821,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1669861913820,
+        "stop" : 1669861913821,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **F** to equal **F**",
+      "time" : {
+        "start" : 1669861913821,
+        "stop" : 1669861913821,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "F"
+      }, {
+        "name" : "expected",
+        "value" : "F"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @usuario",
+      "time" : {
+        "start" : 1669861913821,
+        "stop" : 1669861913821,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/usuario/delete-fisico/362",
+      "time" : {
+        "start" : 1669861913821,
+        "stop" : 1669861913894,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1669861913894,
+        "stop" : 1669861913894,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1669861913894,
+        "stop" : 1669861913894,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 20
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Usuario-Controller"
+  }, {
+    "name" : "epic",
+    "value" : "Usuario-Controller"
+  }, {
+    "name" : "feature",
+    "value" : "DELETE/usuario/{idUsuario}"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "3c573b5c4cd50238",
+        "status" : "passed",
+        "time" : {
+          "start" : 1669853408431,
+          "stop" : 1669853409400,
+          "duration" : 969
+        }
+      }, {
+        "uid" : "9060522f0c9b39ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1669851807634,
+          "stop" : 1669851808609,
+          "duration" : 975
+        }
+      }, {
+        "uid" : "7f722690cacdb807",
+        "status" : "passed",
+        "time" : {
+          "start" : 1669835055322,
+          "stop" : 1669835056540,
+          "duration" : 1218
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7c9ff3906c5f45b9.json",
+  "parameterValues" : [ ]
+}

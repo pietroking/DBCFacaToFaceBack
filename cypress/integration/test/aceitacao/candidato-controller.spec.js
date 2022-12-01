@@ -64,7 +64,7 @@ context('Candidato-Controller', () => {
             .feature('POST/candidato')
         candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO')
         .should((response) => {
-            expect(response.status).to.eq(200);
+            expect(response.status).to.eq(201);
             expect(response.body.email).to.eq('testecandidato@teste.com.br');
             expect(response.body.nomeCompleto).to.eq('testeapiauto');
             expect(response.body.cidade).to.eq('teste');

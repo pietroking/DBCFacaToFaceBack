@@ -1,0 +1,586 @@
+{
+  "uid" : "54c46596fb04095c",
+  "name" : "DELETE - Tornar candidato inativo",
+  "fullName" : "DELETE - Tornar candidato inativo",
+  "historyId" : "1ca302db92c540df0c96b22c3592fe80",
+  "time" : {
+    "start" : 1669861892588,
+    "stop" : 1669861893075,
+    "duration" : 487
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1669861888838,
+        "stop" : 1669861889860,
+        "duration" : 1022
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+        "time" : {
+          "start" : 1669861888840,
+          "stop" : 1669861889853,
+          "duration" : 1013
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1669861889853,
+          "stop" : 1669861889853,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1669861889853,
+          "stop" : 1669861889860,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "assert expected **201** to equal **201**",
+        "time" : {
+          "start" : 1669861889860,
+          "stop" : 1669861889860,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "201"
+        }, {
+          "name" : "expected",
+          "value" : "201"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 4
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 5
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1669861889862,
+        "stop" : 1669861890058,
+        "duration" : 196
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+        "time" : {
+          "start" : 1669861889862,
+          "stop" : 1669861890052,
+          "duration" : 190
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1669861890052,
+          "stop" : 1669861890052,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1669861890052,
+          "stop" : 1669861890058,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "assert expected **201** to equal **201**",
+        "time" : {
+          "start" : 1669861890058,
+          "stop" : 1669861890058,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "201"
+        }, {
+          "name" : "expected",
+          "value" : "201"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 4
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 5
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato",
+      "time" : {
+        "start" : 1669861892594,
+        "stop" : 1669861892781,
+        "duration" : 187
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1669861892781,
+        "stop" : 1669861892781,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1669861892781,
+        "stop" : 1669861892781,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "wrap Object{12}",
+      "time" : {
+        "start" : 1669861892782,
+        "stop" : 1669861892783,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"candidato\")",
+      "time" : {
+        "start" : 1669861892783,
+        "stop" : 1669861892783,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @candidato",
+      "time" : {
+        "start" : 1669861892783,
+        "stop" : 1669861892783,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato/158",
+      "time" : {
+        "start" : 1669861892784,
+        "stop" : 1669861892906,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1669861892906,
+        "stop" : 1669861892906,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1669861892906,
+        "stop" : 1669861892908,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **204** to equal **204**",
+      "time" : {
+        "start" : 1669861892908,
+        "stop" : 1669861892908,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "204"
+      }, {
+        "name" : "expected",
+        "value" : "204"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @candidato",
+      "time" : {
+        "start" : 1669861892908,
+        "stop" : 1669861892908,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato/findbyemails/testecandidato@teste.com.br",
+      "time" : {
+        "start" : 1669861892909,
+        "stop" : 1669861892996,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1669861892996,
+        "stop" : 1669861892996,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1669861892996,
+        "stop" : 1669861892998,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1669861892998,
+        "stop" : 1669861892998,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **F** to equal **F**",
+      "time" : {
+        "start" : 1669861892998,
+        "stop" : 1669861892998,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "F"
+      }, {
+        "name" : "expected",
+        "value" : "F"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @candidato",
+      "time" : {
+        "start" : 1669861892998,
+        "stop" : 1669861892999,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato/delete-fisico/158",
+      "time" : {
+        "start" : 1669861892999,
+        "stop" : 1669861893074,
+        "duration" : 75
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1669861893074,
+        "stop" : 1669861893074,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1669861893074,
+        "stop" : 1669861893075,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 20
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Candidato-Controller"
+  }, {
+    "name" : "epic",
+    "value" : "Candidato-Controller"
+  }, {
+    "name" : "feature",
+    "value" : "DELETE/candidato/{idCandidato}"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "8e87d22ebd49d69a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1669853384517,
+          "stop" : 1669853384816,
+          "duration" : 299
+        }
+      }, {
+        "uid" : "f5a3cdd3c3837f70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1669853158318,
+          "stop" : 1669853158622,
+          "duration" : 304
+        }
+      }, {
+        "uid" : "69c7792876401e49",
+        "status" : "passed",
+        "time" : {
+          "start" : 1669851786143,
+          "stop" : 1669851786669,
+          "duration" : 526
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "54c46596fb04095c.json",
+  "parameterValues" : [ ]
+}
