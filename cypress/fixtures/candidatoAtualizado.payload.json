@@ -1,0 +1,20 @@
+{
+    "nomeCompleto": "testeapiauto",
+    "cidade": "mudanca",
+    "estado": "mudanca",
+    "email": "testecandidato@teste.com.br",
+    "trilha": {
+      "nome": "BACKEND"
+    },
+    "edicao": {
+      "nome": "10"
+    },
+    "notaProva": 10,
+    "linguagens": [
+      {
+        "nome": "JAVA"
+      }
+    ],
+    "observacoes": "string",
+    "ativo": "T"
+  }

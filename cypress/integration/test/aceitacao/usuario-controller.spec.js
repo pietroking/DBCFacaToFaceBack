@@ -10,6 +10,7 @@ const usuarioErrorPerfilTest = require('../../../fixtures/usuarioErrorPerfil.pay
 //     cy.get('input').upload(content, 'myfile.jpg', 'image/jpeg')})
 
 
+
 context('Usuario-Controller', () => {
 //////////////   GET-POSITIVOS   //////////////
     it('GET - Visualizar usuario logado', () => {
@@ -96,7 +97,7 @@ context('Usuario-Controller', () => {
     //     })
     // });
 //////////////   GET-NEGATIVOS   //////////////
-    it('GET - Listar usuario por ID inexistente', () => {
+    it('GET - Tentar listar usuario por ID inexistente', () => {
         cy.allure()
             .epic('Usuario-Controller')
             .feature('GET/usuario/id')
@@ -107,7 +108,7 @@ context('Usuario-Controller', () => {
         })
     });
 
-    it('GET - Listar usuario por email inexistente', () => {
+    it('GET - Tentar listar usuario por email inexistente', () => {
         cy.allure()
             .epic('Usuario-Controller')
             .feature('GET/usuario/email')
@@ -118,7 +119,7 @@ context('Usuario-Controller', () => {
         })
     });
 
-    it('GET - Listar usuarios por nome inexistente', () => {
+    it('GET - Tentar listar usuarios por nome inexistente', () => {
         cy.allure()
             .epic('Usuario-Controller')
             .feature('GET/usuario/findbynomecompleto')
@@ -136,7 +137,7 @@ context('Usuario-Controller', () => {
         usuarioService.POSTusuarioRequest(usuarioTest, 'MASCULINO')
         .should((response) => {
             expect(response.status).to.eq(200);
-            expect(response.body.email).to.eq('teste@teste.com.br');
+            expect(response.body.email).to.eq('pietro.bianchi@dbccompany.com.br');
             expect(response.body.nomeCompleto).to.eq('testeapiauto');
             expect(response.body.cidade).to.eq('teste');
             expect(response.body.estado).to.eq('teste');
@@ -196,7 +197,7 @@ context('Usuario-Controller', () => {
         cy.get('@usuario').then(usuario => usuarioService.PUTusuarioRequest(usuarioNovoTest, usuario.idUsuario, 'FEMININO'))
         .should((response) => {
             expect(response.status).to.eq(200);
-            expect(response.body.email).to.eq('teste@teste.com.br');
+            expect(response.body.email).to.eq('pietro.bianchi@dbccompany.com.br');
             expect(response.body.nomeCompleto).to.eq('testeapiauto');
             expect(response.body.cidade).to.eq('mudanca');
             expect(response.body.estado).to.eq('mudanca');
@@ -213,7 +214,7 @@ context('Usuario-Controller', () => {
         
     // });
 //////////////   PUT-NEGATIVOS   //////////////
-    it('PUT - Atualizar usuario passando trilha errada', () => {
+    it('PUT - Tentar atualizar usuario passando trilha errada', () => {
         cy.allure()
             .epic('Usuario-Controller')
             .feature('PUT/usuario')
@@ -228,7 +229,7 @@ context('Usuario-Controller', () => {
         cy.get('@usuario').then(usuario => usuarioService.DELETEfisicoUsuarioRequest(usuario.idUsuario))
     });
 
-    it('PUT - Atualizar usuario passando perfil errado', () => {
+    it('PUT - Tentar atualizar usuario passando perfil errado', () => {
         cy.allure()
             .epic('Usuario-Controller')
             .feature('PUT/usuario')
@@ -243,12 +244,7 @@ context('Usuario-Controller', () => {
         cy.get('@usuario').then(usuario => usuarioService.DELETEfisicoUsuarioRequest(usuario.idUsuario))
     });
 
-    // it('PUT - Upload foto passando email inexistente', () => {
-    //     cy.allure()
-    //         .epic('Usuario-Controller')
-    //         .feature('PUT/usuario/upload-foto')
-        
-    // });
+    
 
     // it('PUT - Upload foto passando foto inexistente', () => {
     //     cy.allure()
@@ -314,4 +310,30 @@ context('Usuario-Controller', () => {
                 expect(response.body.message).to.eq(`Usuário com id ${idInexistente} não foi encontrado.`)
             })
     });
+
+
+    // it.only('PUT - Upload foto passando email inexistente', () => {
+    //     // const foto = cy.fixture('goku.jpg', 'binary').then(content => {
+    //     //         // cy.get('[data-cy=upload-image]').attachFile(content, 'goku.jpg', 'image/jpeg')})
+    //     //         cy.get('input[type="file"]').as('fileInput').attachFile('goku.jpg')})
+    //     // cy.fixture('goku.jpg', 'binary').then(Cypress.Blob.binaryStringToBlob).then(content => {
+    //     //     usuarioService.PUTusuarioFotoRequest(usuario.email, content)
+    //     // const foto = cy.fixture('goku.jpg', 'binary').as('foto')
+    //     // cy.get('input[type="file"]').then(function ($input){
+    //     //     const blob = Cypress.Blob.base64StringToBlob(this.foto, 'image/png')
+    //     //     $input.fileupload('add', { files: blob })
+    //     // })
+    //     cy.allure()
+    //         .epic('Usuario-Controller')
+    //         .feature('PUT/usuario/upload-foto')
+    //     usuarioService.POSTusuarioRequest(usuarioTest, 'MASCULINO').then((response) => {
+    //         cy.wrap(response.body).as('usuario')
+    //     })
+    //     cy.get('@usuario').then(usuario => {cy.fixture('goku.jpg', 'binary').then(content => {
+    //         usuarioService.PUTusuarioFotoRequest(usuario.email, content)
+    //     .should((response) => {
+    //         expect(response.status).to.eq(200);
+    //     })})})
+    //     cy.get('@usuario').then(usuario => usuarioService.DELETEfisicoUsuarioRequest(usuario.idUsuario))
+    // });
 })

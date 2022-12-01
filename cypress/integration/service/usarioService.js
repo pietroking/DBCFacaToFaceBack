@@ -128,6 +128,21 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
+    PUTusuarioFotoRequest(email, foto){
+        return cy.request({
+            method: 'PUT',
+            url:`${baseUrl}/usuario/upload-foto`,
+            headers:{
+                authorization: token
+            },
+            qs: {
+                "email":`${email}`
+            },
+            body: foto,
+            failOnStatusCode: false
+        }).as('response').get('@response')
+    }
+
     DELETElogicoUsuarioRequest(idUsuario){
         return cy.request({
             method: 'DELETE',
@@ -146,21 +161,6 @@ export default class UsuarioService{
             headers:{
                 authorization: token
             },
-            failOnStatusCode: false
-        }).as('response').get('@response')
-    }
-
-    PUTusuarioFotoRequest(email, foto){
-        return cy.request({
-            method: 'PUT',
-            url:`${baseUrl}/usuario/upload-foto`,
-            headers:{
-                authorization: token
-            },
-            qs: {
-                "email":`${email}`
-            },
-            body: foto,
             failOnStatusCode: false
         }).as('response').get('@response')
     }

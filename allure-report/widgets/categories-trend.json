@@ -1,13 +1,9 @@
 [ {
   "data" : {
-    "Teste executado com sucesso" : 20
+    "Teste executado com sucesso" : 37
   }
 }, {
   "data" : {
-    "Teste executado com sucesso" : 23
-  }
-}, {
-  "data" : {
-    "Teste executado com sucesso" : 23
+    "Product defects" : 1
   }
 } ]
