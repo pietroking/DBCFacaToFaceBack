@@ -1,18 +1,19 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
   "children" : [ {
     "name" : "Candidato-Controller",
     "children" : [ {
       "name" : "GET/candidato",
       "children" : [ {
         "name" : "GET - Listar candidatos",
-        "uid" : "9ab8807d91fbf011",
+        "uid" : "c6dc21b4bb2c842c",
         "parentUid" : "275c38b548075f20c953ced2d0e8a57b",
         "status" : "passed",
         "time" : {
-          "start" : 1669952983291,
-          "stop" : 1669952984161,
-          "duration" : 870
+          "start" : 1669953519126,
+          "stop" : 1669953519644,
+          "duration" : 518
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +24,13 @@
       "name" : "GET/candidato/findbyemails",
       "children" : [ {
         "name" : "GET - Listar candidato por email",
-        "uid" : "594ea20c07417723",
+        "uid" : "f129252fc371115c",
         "parentUid" : "126acdeee6e118bb3c183f554630f14f",
         "status" : "passed",
         "time" : {
-          "start" : 1669952984164,
-          "stop" : 1669952984685,
-          "duration" : 521
+          "start" : 1669953519649,
+          "stop" : 1669953520175,
+          "duration" : 526
         },
         "flaky" : false,
         "newFailed" : false,
@@ -40,13 +41,13 @@
       "name" : "GET/candidato/listar-candidato-principal-por-nome-ou-por-trilha",
       "children" : [ {
         "name" : "GET - Listar candidatos por nome ou trilha",
-        "uid" : "3bdc66530aa6d6f1",
+        "uid" : "4318162510f30dcb",
         "parentUid" : "198ff05f38e8af464ceee519d8e3fa81",
         "status" : "passed",
         "time" : {
-          "start" : 1669952984688,
-          "stop" : 1669952984937,
-          "duration" : 249
+          "start" : 1669953520177,
+          "stop" : 1669953520425,
+          "duration" : 248
         },
         "flaky" : false,
         "newFailed" : false,
@@ -57,64 +58,64 @@
       "name" : "POST/candidato",
       "children" : [ {
         "name" : "POST - Criar candidato",
-        "uid" : "b0b4b7e84699a63e",
+        "uid" : "602ed309af6ba97",
         "parentUid" : "23ab7ce9587c88bc95bc131228f612b0",
         "status" : "passed",
         "time" : {
-          "start" : 1669952985189,
-          "stop" : 1669952985526,
-          "duration" : 337
+          "start" : 1669953520684,
+          "stop" : 1669953521141,
+          "duration" : 457
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "POST - Tentar criar candidato com email ja cadastrado",
-        "uid" : "48c448e80da2f5e9",
+        "uid" : "331a375e3cf33ce1",
         "parentUid" : "23ab7ce9587c88bc95bc131228f612b0",
         "status" : "passed",
         "time" : {
-          "start" : 1669952985528,
-          "stop" : 1669952985929,
-          "duration" : 401
+          "start" : 1669953521144,
+          "stop" : 1669953521558,
+          "duration" : 414
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "POST - Tentar criar candidato com email invalido",
-        "uid" : "72520a0309a35dd",
+        "uid" : "33690b4abc08283b",
         "parentUid" : "23ab7ce9587c88bc95bc131228f612b0",
         "status" : "passed",
         "time" : {
-          "start" : 1669952985932,
-          "stop" : 1669952986178,
-          "duration" : 246
+          "start" : 1669953521560,
+          "stop" : 1669953521809,
+          "duration" : 249
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "POST - Tentar criar candidato com trilha invalido",
-        "uid" : "123dec5993aee97f",
+        "uid" : "3e5cf77236dd39d6",
         "parentUid" : "23ab7ce9587c88bc95bc131228f612b0",
         "status" : "passed",
         "time" : {
-          "start" : 1669952986180,
-          "stop" : 1669952986507,
-          "duration" : 327
+          "start" : 1669953521811,
+          "stop" : 1669953522050,
+          "duration" : 239
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "POST - Tentar criar candidato com email em branco",
-        "uid" : "97c586109badf8b4",
+        "uid" : "f49f499436682cf",
         "parentUid" : "23ab7ce9587c88bc95bc131228f612b0",
         "status" : "passed",
         "time" : {
-          "start" : 1669952986509,
-          "stop" : 1669952986754,
+          "start" : 1669953522053,
+          "stop" : 1669953522298,
           "duration" : 245
         },
         "flaky" : false,
@@ -126,13 +127,13 @@
       "name" : "DELETE/candidato/{idCandidato}",
       "children" : [ {
         "name" : "DELETE - Tornar candidato inativo",
-        "uid" : "2dc9d8fb07ca6773",
+        "uid" : "1aa9551c4c1529c5",
         "parentUid" : "643d051cfe60f26ebc1ebb2134a03631",
         "status" : "passed",
         "time" : {
-          "start" : 1669952988705,
-          "stop" : 1669952989179,
-          "duration" : 474
+          "start" : 1669953524244,
+          "stop" : 1669953524719,
+          "duration" : 475
         },
         "flaky" : false,
         "newFailed" : false,
@@ -147,13 +148,13 @@
       "name" : "GET/candidato/findbyemails",
       "children" : [ {
         "name" : "GET - Tentar listar candato por email inexistente",
-        "uid" : "ee9cef2935945a81",
+        "uid" : "b96aacabaf1848ef",
         "parentUid" : "bafd0f4c3da9ddba937ac0e4fead6156",
         "status" : "passed",
         "time" : {
-          "start" : 1669952984939,
-          "stop" : 1669952985186,
-          "duration" : 247
+          "start" : 1669953520427,
+          "stop" : 1669953520682,
+          "duration" : 255
         },
         "flaky" : false,
         "newFailed" : false,
@@ -164,65 +165,65 @@
       "name" : "PUT/candidato",
       "children" : [ {
         "name" : "PUT - Atualizar candidato",
-        "uid" : "c1c823bf0f5b968a",
+        "uid" : "23449be93c894de7",
         "parentUid" : "076d2eb221d1890b76a5154f7ad65e6a",
         "status" : "passed",
         "time" : {
-          "start" : 1669952986757,
-          "stop" : 1669952987178,
-          "duration" : 421
+          "start" : 1669953522301,
+          "stop" : 1669953522779,
+          "duration" : 478
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "PUT - Tentar atualizar candidato passando id inexistente",
-        "uid" : "67df0e311125f272",
+        "uid" : "6cc81db68c8f9d29",
         "parentUid" : "076d2eb221d1890b76a5154f7ad65e6a",
         "status" : "passed",
         "time" : {
-          "start" : 1669952987180,
-          "stop" : 1669952987436,
-          "duration" : 256
+          "start" : 1669953522781,
+          "stop" : 1669953523024,
+          "duration" : 243
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "PUT - Tentar atualizar candidato com email invalido",
-        "uid" : "24d54cf9cb2ec1bc",
+        "uid" : "1ef73655e8e78bea",
         "parentUid" : "076d2eb221d1890b76a5154f7ad65e6a",
         "status" : "passed",
         "time" : {
-          "start" : 1669952987438,
-          "stop" : 1669952987884,
-          "duration" : 446
+          "start" : 1669953523026,
+          "stop" : 1669953523423,
+          "duration" : 397
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "PUT - Tentar atualizar candidato com trilha invalido",
-        "uid" : "92357853954518ee",
+        "uid" : "b1e459c6a57e4703",
         "parentUid" : "076d2eb221d1890b76a5154f7ad65e6a",
         "status" : "passed",
         "time" : {
-          "start" : 1669952987887,
-          "stop" : 1669952988289,
-          "duration" : 402
+          "start" : 1669953523427,
+          "stop" : 1669953523844,
+          "duration" : 417
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "PUT - Tentar atualizar candidato com email em branco",
-        "uid" : "5d1f0f1fa326be0b",
+        "uid" : "c99c63ef875f8d1d",
         "parentUid" : "076d2eb221d1890b76a5154f7ad65e6a",
         "status" : "passed",
         "time" : {
-          "start" : 1669952988291,
-          "stop" : 1669952988702,
-          "duration" : 411
+          "start" : 1669953523847,
+          "stop" : 1669953524241,
+          "duration" : 394
         },
         "flaky" : false,
         "newFailed" : false,
@@ -233,26 +234,26 @@
       "name" : "DELETE/usuario/delete-fisico/{idUsuario}",
       "children" : [ {
         "name" : "DELETE - Deletar usuario do sistema",
-        "uid" : "cd1114ac4a3e9005",
+        "uid" : "eb5b9c82c6a12784",
         "parentUid" : "2b6b6a11c9529f3202a2b30dd258000b",
         "status" : "passed",
         "time" : {
-          "start" : 1669952989181,
-          "stop" : 1669952989560,
-          "duration" : 379
+          "start" : 1669953524721,
+          "stop" : 1669953525117,
+          "duration" : 396
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "DELETE - Tentar deletar usuario inexistente do sistema",
-        "uid" : "715126cdd898cf5c",
+        "uid" : "1e9fe6d95a15b51e",
         "parentUid" : "2b6b6a11c9529f3202a2b30dd258000b",
         "status" : "passed",
         "time" : {
-          "start" : 1669952989820,
-          "stop" : 1669952990363,
-          "duration" : 543
+          "start" : 1669953525360,
+          "stop" : 1669953525637,
+          "duration" : 277
         },
         "flaky" : false,
         "newFailed" : false,
@@ -263,13 +264,13 @@
       "name" : "DELETE/candidato/{idCandidato}",
       "children" : [ {
         "name" : "DELETE - Tentar tornar usuario inexistente inativo",
-        "uid" : "605163849ffab91e",
+        "uid" : "9aacc8505ae3c4d6",
         "parentUid" : "9fab6490c9113a0c2c5136afbfe12544",
         "status" : "passed",
         "time" : {
-          "start" : 1669952989562,
-          "stop" : 1669952989818,
-          "duration" : 256
+          "start" : 1669953525120,
+          "stop" : 1669953525358,
+          "duration" : 238
         },
         "flaky" : false,
         "newFailed" : false,
@@ -280,13 +281,13 @@
       "name" : "GET/usuario/logado",
       "children" : [ {
         "name" : "GET - Visualizar usuario logado",
-        "uid" : "b8979e73fa40378f",
+        "uid" : "d58967b2b44a946b",
         "parentUid" : "d916c1911ae434068bf282ac1ba6e193",
         "status" : "passed",
         "time" : {
-          "start" : 1669953000074,
-          "stop" : 1669953000355,
-          "duration" : 281
+          "start" : 1669953535491,
+          "stop" : 1669953535762,
+          "duration" : 271
         },
         "flaky" : false,
         "newFailed" : false,
@@ -297,13 +298,13 @@
       "name" : "GET/usuario",
       "children" : [ {
         "name" : "GET - Listar usuarios",
-        "uid" : "992b5846ec25c286",
+        "uid" : "187ca5d18a969a78",
         "parentUid" : "17118f9374208c97b980c8aab77f0c34",
         "status" : "passed",
         "time" : {
-          "start" : 1669953000362,
-          "stop" : 1669953000737,
-          "duration" : 375
+          "start" : 1669953535767,
+          "stop" : 1669953536106,
+          "duration" : 339
         },
         "flaky" : false,
         "newFailed" : false,
@@ -314,26 +315,26 @@
       "name" : "GET/usuario/id",
       "children" : [ {
         "name" : "GET - Listar usuario por ID",
-        "uid" : "90bf5775b7ad0323",
+        "uid" : "8b27a90b6adcb730",
         "parentUid" : "8ccbb443d70e52b4e516c5a807d6db88",
         "status" : "passed",
         "time" : {
-          "start" : 1669953000740,
-          "stop" : 1669953000993,
-          "duration" : 253
+          "start" : 1669953536108,
+          "stop" : 1669953536440,
+          "duration" : 332
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "GET - Tentar listar usuario por ID inexistente",
-        "uid" : "ad39aff047f9fc1e",
+        "uid" : "3f3c4bf951f771a4",
         "parentUid" : "8ccbb443d70e52b4e516c5a807d6db88",
         "status" : "passed",
         "time" : {
-          "start" : 1669953001849,
-          "stop" : 1669953002103,
-          "duration" : 254
+          "start" : 1669953537305,
+          "stop" : 1669953537552,
+          "duration" : 247
         },
         "flaky" : false,
         "newFailed" : false,
@@ -344,26 +345,26 @@
       "name" : "GET/usuario/email",
       "children" : [ {
         "name" : "GET - Listar usuario por email",
-        "uid" : "ccbf2fc1927c9254",
+        "uid" : "9aaa802f518f9ab5",
         "parentUid" : "7a94de29747ba350e475da2b4e69f2ca",
         "status" : "passed",
         "time" : {
-          "start" : 1669953000995,
-          "stop" : 1669953001282,
-          "duration" : 287
+          "start" : 1669953536443,
+          "stop" : 1669953536698,
+          "duration" : 255
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "GET - Tentar listar usuario por email inexistente",
-        "uid" : "67822a85b84ec8eb",
+        "uid" : "9abf14e1df63861c",
         "parentUid" : "7a94de29747ba350e475da2b4e69f2ca",
         "status" : "passed",
         "time" : {
-          "start" : 1669953002106,
-          "stop" : 1669953002359,
-          "duration" : 253
+          "start" : 1669953537555,
+          "stop" : 1669953537798,
+          "duration" : 243
         },
         "flaky" : false,
         "newFailed" : false,
@@ -374,26 +375,26 @@
       "name" : "GET/usuario/findbynomecompleto",
       "children" : [ {
         "name" : "GET - Listar usuarios por nome",
-        "uid" : "c6b7b87b0f21ba31",
+        "uid" : "271fc2bd6a8cd813",
         "parentUid" : "cbe74d7b86019f340b0b22327222fa59",
         "status" : "passed",
         "time" : {
-          "start" : 1669953001284,
-          "stop" : 1669953001532,
-          "duration" : 248
+          "start" : 1669953536701,
+          "stop" : 1669953536962,
+          "duration" : 261
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "GET - Tentar listar usuarios por nome inexistente",
-        "uid" : "329e861b7124d893",
+        "uid" : "4ad9f4bb87b8292c",
         "parentUid" : "cbe74d7b86019f340b0b22327222fa59",
         "status" : "passed",
         "time" : {
-          "start" : 1669953002361,
-          "stop" : 1669953002622,
-          "duration" : 261
+          "start" : 1669953537800,
+          "stop" : 1669953538051,
+          "duration" : 251
         },
         "flaky" : false,
         "newFailed" : false,
@@ -404,13 +405,13 @@
       "name" : "GET/usuario/recuperar-imagem",
       "children" : [ {
         "name" : "GET - Recuperar imagem de usuario",
-        "uid" : "639b1e030a4c5c29",
+        "uid" : "4f018dac5d5f2f86",
         "parentUid" : "ab13cb4dd3803422ff80fd9993d6748d",
         "status" : "passed",
         "time" : {
-          "start" : 1669953001534,
-          "stop" : 1669953001847,
-          "duration" : 313
+          "start" : 1669953536965,
+          "stop" : 1669953537302,
+          "duration" : 337
         },
         "flaky" : false,
         "newFailed" : false,
@@ -421,52 +422,52 @@
       "name" : "POST/usuario",
       "children" : [ {
         "name" : "POST - Criar usuario",
-        "uid" : "8b1e94e002f21fc5",
+        "uid" : "f94f06aec082e932",
         "parentUid" : "e021bf04cc5d8b00f5d5c9ac7619a47b",
         "status" : "passed",
         "time" : {
-          "start" : 1669953002624,
-          "stop" : 1669953003965,
-          "duration" : 1341
+          "start" : 1669953538054,
+          "stop" : 1669953539166,
+          "duration" : 1112
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "POST - Tentar criar usuario com email ja cadastrado",
-        "uid" : "ba8f1ea9cad63696",
+        "uid" : "9f93ffb8712b6c3a",
         "parentUid" : "e021bf04cc5d8b00f5d5c9ac7619a47b",
         "status" : "passed",
         "time" : {
-          "start" : 1669953003969,
-          "stop" : 1669953005046,
-          "duration" : 1077
+          "start" : 1669953539169,
+          "stop" : 1669953540166,
+          "duration" : 997
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "POST - Tentar criar usuario passando trilha errada",
-        "uid" : "390e5dd62b4c961d",
+        "uid" : "6082e10cccd7252b",
         "parentUid" : "e021bf04cc5d8b00f5d5c9ac7619a47b",
         "status" : "passed",
         "time" : {
-          "start" : 1669953005049,
-          "stop" : 1669953005410,
-          "duration" : 361
+          "start" : 1669953540169,
+          "stop" : 1669953540527,
+          "duration" : 358
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "POST - Tentar criar usuario passando perfil errado",
-        "uid" : "172fb6b442500800",
+        "uid" : "8dc44a0d47ec6691",
         "parentUid" : "e021bf04cc5d8b00f5d5c9ac7619a47b",
         "status" : "passed",
         "time" : {
-          "start" : 1669953005412,
-          "stop" : 1669953005910,
-          "duration" : 498
+          "start" : 1669953540529,
+          "stop" : 1669953540891,
+          "duration" : 362
         },
         "flaky" : false,
         "newFailed" : false,
@@ -477,39 +478,39 @@
       "name" : "PUT/usuario",
       "children" : [ {
         "name" : "PUT - Atualizar usuario",
-        "uid" : "36b0ea66f2e76b24",
+        "uid" : "95425c9d99029478",
         "parentUid" : "c3186ee97c5566264f3054c0dab7cd48",
         "status" : "passed",
         "time" : {
-          "start" : 1669953005913,
-          "stop" : 1669953006980,
-          "duration" : 1067
+          "start" : 1669953540893,
+          "stop" : 1669953542053,
+          "duration" : 1160
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "PUT - Tentar atualizar usuario passando trilha errada",
-        "uid" : "5887a677bdc4cd4d",
+        "uid" : "44b39407b4be7f34",
         "parentUid" : "c3186ee97c5566264f3054c0dab7cd48",
         "status" : "passed",
         "time" : {
-          "start" : 1669953006983,
-          "stop" : 1669953008018,
-          "duration" : 1035
+          "start" : 1669953542055,
+          "stop" : 1669953543077,
+          "duration" : 1022
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "PUT - Tentar atualizar usuario passando perfil errado",
-        "uid" : "546997dfd1ae76e0",
+        "uid" : "e4f24ae87b3f854a",
         "parentUid" : "c3186ee97c5566264f3054c0dab7cd48",
         "status" : "passed",
         "time" : {
-          "start" : 1669953008020,
-          "stop" : 1669953009093,
-          "duration" : 1073
+          "start" : 1669953543079,
+          "stop" : 1669953544170,
+          "duration" : 1091
         },
         "flaky" : false,
         "newFailed" : false,
@@ -520,52 +521,52 @@
       "name" : "DELETE/usuario/{idUsuario}",
       "children" : [ {
         "name" : "DELETE - Tornar usuario inativo",
-        "uid" : "5040c185accbdc08",
+        "uid" : "a36e066d7fced91d",
         "parentUid" : "fc38cd745e44d841ca35eb803b86337e",
         "status" : "passed",
         "time" : {
-          "start" : 1669953009097,
-          "stop" : 1669953010184,
-          "duration" : 1087
+          "start" : 1669953544173,
+          "stop" : 1669953545296,
+          "duration" : 1123
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "DELETE - Deletar usuario do sistema",
-        "uid" : "964bd0b7d75461c6",
+        "uid" : "6e5d4413e74e0e39",
         "parentUid" : "fc38cd745e44d841ca35eb803b86337e",
         "status" : "passed",
         "time" : {
-          "start" : 1669953010185,
-          "stop" : 1669953011222,
-          "duration" : 1037
+          "start" : 1669953545299,
+          "stop" : 1669953546310,
+          "duration" : 1011
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "DELETE - Tentar tornar usuario inexistente inativo",
-        "uid" : "8e647799fc308d1d",
+        "uid" : "262ddcad1b32424e",
         "parentUid" : "fc38cd745e44d841ca35eb803b86337e",
         "status" : "passed",
         "time" : {
-          "start" : 1669953011224,
-          "stop" : 1669953011468,
-          "duration" : 244
+          "start" : 1669953546313,
+          "stop" : 1669953546556,
+          "duration" : 243
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "DELETE - Tentar deletar usuario inexistente do sistema",
-        "uid" : "cff0b4fc8f3260e5",
+        "uid" : "36eab97132510405",
         "parentUid" : "fc38cd745e44d841ca35eb803b86337e",
         "status" : "passed",
         "time" : {
-          "start" : 1669953011470,
-          "stop" : 1669953011722,
-          "duration" : 252
+          "start" : 1669953546558,
+          "stop" : 1669953546834,
+          "duration" : 276
         },
         "flaky" : false,
         "newFailed" : false,
@@ -576,13 +577,13 @@
     "uid" : "c63b552092d98022ca7e962c8da03d9f"
   }, {
     "name" : "pesquisa2222",
-    "uid" : "f293900a962de1f1",
+    "uid" : "99d9d5904736b4a4",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1669952993612,
-      "stop" : 1669952995779,
-      "duration" : 2167
+      "start" : 1669953528904,
+      "stop" : 1669953531070,
+      "duration" : 2166
     },
     "flaky" : false,
     "newFailed" : false,
@@ -593,13 +594,13 @@
       "name" : "PUT/entrevista",
       "children" : [ {
         "name" : "PUT - Atualizar entrevista",
-        "uid" : "5064c682fc963595",
+        "uid" : "c03b24a0f869fce7",
         "parentUid" : "a675918956f7cec6f1498f1c8e5cd2e7",
         "status" : "passed",
         "time" : {
-          "start" : 1669952997483,
-          "stop" : 1669952998646,
-          "duration" : 1163
+          "start" : 1669953532814,
+          "stop" : 1669953534109,
+          "duration" : 1295
         },
         "flaky" : false,
         "newFailed" : false,
@@ -612,26 +613,26 @@
     "name" : "Contrato candidato",
     "children" : [ {
       "name" : "Contrato - Validar contrato get candidato",
-      "uid" : "580c8da7d6909570",
+      "uid" : "25e3b7a3b4d4770a",
       "parentUid" : "2592040a5677342175e87e8375aec031",
       "status" : "passed",
       "time" : {
-        "start" : 1669953013846,
-        "stop" : 1669953014157,
-        "duration" : 311
+        "start" : 1669953548939,
+        "stop" : 1669953549277,
+        "duration" : 338
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato get candidato findbyemail",
-      "uid" : "dc906adea602a3ec",
+      "uid" : "687d99b72e8c4414",
       "parentUid" : "2592040a5677342175e87e8375aec031",
       "status" : "passed",
       "time" : {
-        "start" : 1669953014161,
-        "stop" : 1669953014575,
-        "duration" : 414
+        "start" : 1669953549280,
+        "stop" : 1669953550195,
+        "duration" : 915
       },
       "flaky" : false,
       "newFailed" : false,
@@ -642,88 +643,70 @@
     "name" : "Contrato usuario",
     "children" : [ {
       "name" : "Contrato - Validar contrato get usuario",
-      "uid" : "28ee07180153e4b2",
+      "uid" : "c9ac7313e41afb17",
       "parentUid" : "9c49eadb7b742eb7b44f61a5712c5b77",
       "status" : "passed",
       "time" : {
-        "start" : 1669953014580,
-        "stop" : 1669953014864,
-        "duration" : 284
+        "start" : 1669953550198,
+        "stop" : 1669953550491,
+        "duration" : 293
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato get usuario logado",
-      "uid" : "68dd5f3e9a938ac9",
+      "uid" : "90dc0fd32fb775c6",
       "parentUid" : "9c49eadb7b742eb7b44f61a5712c5b77",
       "status" : "passed",
       "time" : {
-        "start" : 1669953014869,
-        "stop" : 1669953015125,
-        "duration" : 256
+        "start" : 1669953550493,
+        "stop" : 1669953550750,
+        "duration" : 257
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato get usuario idUsuario",
-      "uid" : "49709cf87df20c82",
+      "uid" : "d974bb1b69c332b9",
       "parentUid" : "9c49eadb7b742eb7b44f61a5712c5b77",
       "status" : "passed",
       "time" : {
-        "start" : 1669953015127,
-        "stop" : 1669953016200,
-        "duration" : 1073
+        "start" : 1669953550752,
+        "stop" : 1669953551886,
+        "duration" : 1134
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato get usuario email",
-      "uid" : "c9c1006bf5b0e78",
+      "uid" : "1e01b715b80d4aef",
       "parentUid" : "9c49eadb7b742eb7b44f61a5712c5b77",
       "status" : "passed",
       "time" : {
-        "start" : 1669953016202,
-        "stop" : 1669953017588,
-        "duration" : 1386
+        "start" : 1669953551889,
+        "stop" : 1669953553113,
+        "duration" : 1224
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "Contrato - Validar contrato get usuario nome",
-      "uid" : "83edeb0f9667b5a3",
+      "uid" : "da6306bd888275f8",
       "parentUid" : "9c49eadb7b742eb7b44f61a5712c5b77",
       "status" : "passed",
       "time" : {
-        "start" : 1669953017590,
-        "stop" : 1669953018671,
-        "duration" : 1081
+        "start" : 1669953553116,
+        "stop" : 1669953554165,
+        "duration" : 1049
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "9c49eadb7b742eb7b44f61a5712c5b77"
-  }, {
-    "name" : "Contrato entrevista",
-    "children" : [ {
-      "name" : "Contrato - Validar contrato get entrevista",
-      "uid" : "3d0e2283202548e7",
-      "parentUid" : "3fd3affd9f87ef582aab6556af8eefc3",
-      "status" : "failed",
-      "time" : {
-        "start" : 1669953018674,
-        "stop" : 1669953019050,
-        "duration" : 376
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    } ],
-    "uid" : "3fd3affd9f87ef582aab6556af8eefc3"
-  } ],
-  "name" : "behaviors"
+  } ]
 }

@@ -135,12 +135,12 @@ context('Contrato GET/usuario', () => {
 })
 
 context('Contrato GET/entrevista', () => {
-    it('Contrato - Validar contrato get entrevista', () => {
-        cy.allure().epic('Contrato entrevista');
-        cy.login()
-        .then((response) => {
-            entrevistaService.contratoGetEntrevista('getEntrevista.contrato', response.body)})
-    });
+    // it('Contrato - Validar contrato get entrevista', () => {
+    //     cy.allure().epic('Contrato entrevista');
+    //     cy.login()
+    //     .then((response) => {
+    //         entrevistaService.contratoGetEntrevista('getEntrevista.contrato', response.body)})
+    // });
 
     // it.only('Contrato - Validar contrato get entrevista por mes/ano', () => {
     //     cy.allure().epic('Contrato entrevista');
