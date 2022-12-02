@@ -1,0 +1,208 @@
+{
+    "type": "object",
+    "required": [
+        "totalElementos",
+        "quantidadePaginas",
+        "pagina",
+        "tamanho",
+        "elementos"
+    ],
+    "properties": {
+        "totalElementos": {
+            "type": "number"
+        },
+        "quantidadePaginas": {
+            "type": "number"
+        },
+        "pagina": {
+            "type": "number"
+        },
+        "tamanho": {
+            "type": "number"
+        },
+        "elementos": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "candidatoEmail",
+                    "usuarioEmail",
+                    "dataEntrevista",
+                    "cidade",
+                    "estado",
+                    "observacoes",
+                    "idEntrevista",
+                    "candidatoDTO",
+                    "usuarioDTO"
+                ],
+                "properties": {
+                    "candidatoEmail": {
+                        "type": "string"
+                    },
+                    "usuarioEmail": {
+                        "type": "string"
+                    },
+                    "dataEntrevista": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "estado": {
+                        "type": "string"
+                    },
+                    "observacoes": {
+                        "type": "string"
+                    },
+                    "idEntrevista": {
+                        "type": "number"
+                    },
+                    "candidatoDTO": {
+                        "type": "object",
+                        "required": [
+                            "nomeCompleto",
+                            "cidade",
+                            "estado",
+                            "email",
+                            "trilha",
+                            "edicao",
+                            "notaProva",
+                            "linguagens",
+                            "observacoes",
+                            "ativo",
+                            "idCandidato",
+                            "genero"
+                        ],
+                        "properties": {
+                            "nomeCompleto": {
+                                "type": "string"
+                            },
+                            "cidade": {
+                                "type": "string"
+                            },
+                            "estado": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "trilha": {
+                                "type": "object",
+                                "required": [
+                                    "nome"
+                                ],
+                                "properties": {
+                                    "nome": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "edicao": {
+                                "type": "object",
+                                "required": [
+                                    "nome"
+                                ],
+                                "properties": {
+                                    "nome": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "notaProva": {
+                                "type": "number"
+                            },
+                            "linguagens": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "nome"
+                                    ],
+                                    "properties": {
+                                        "nome": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "observacoes": {
+                                "type": "string"
+                            },
+                            "ativo": {
+                                "type": "string"
+                            },
+                            "idCandidato": {
+                                "type": "number"
+                            },
+                            "genero": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "usuarioDTO": {
+                        "type": "object",
+                        "required": [
+                            "nomeCompleto",
+                            "cidade",
+                            "estado",
+                            "email",
+                            "trilha",
+                            "perfis",
+                            "ativo",
+                            "idUsuario",
+                            "genero"
+                        ],
+                        "properties": {
+                            "nomeCompleto": {
+                                "type": "string"
+                            },
+                            "cidade": {
+                                "type": "string"
+                            },
+                            "estado": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "trilha": {
+                                "type": "object",
+                                "required": [
+                                    "nome"
+                                ],
+                                "properties": {
+                                    "nome": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "perfis": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "nome"
+                                    ],
+                                    "properties": {
+                                        "nome": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "ativo": {
+                                "type": "string"
+                            },
+                            "idUsuario": {
+                                "type": "number"
+                            },
+                            "genero": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

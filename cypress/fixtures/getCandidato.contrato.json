@@ -1,0 +1,109 @@
+{
+    "type": "object",
+    "required": [
+        "totalElementos",
+        "quantidadePaginas",
+        "pagina",
+        "tamanho",
+        "elementos"
+    ],
+    "properties": {
+        "totalElementos": {
+            "type": "number"
+        },
+        "quantidadePaginas": {
+            "type": "number"
+        },
+        "pagina": {
+            "type": "number"
+        },
+        "tamanho": {
+            "type": "number"
+        },
+        "elementos": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "nomeCompleto",
+                    "cidade",
+                    "estado",
+                    "email",
+                    "trilha",
+                    "edicao",
+                    "notaProva",
+                    "linguagens",
+                    "observacoes",
+                    "ativo",
+                    "idCandidato",
+                    "genero"
+                ],
+                "properties": {
+                    "nomeCompleto": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "estado": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "trilha": {
+                        "type": "object",
+                        "required": [
+                            "nome"
+                        ],
+                        "properties": {
+                            "nome": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "edicao": {
+                        "type": "object",
+                        "required": [
+                            "nome"
+                        ],
+                        "properties": {
+                            "nome": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "notaProva": {
+                        "type": "number"
+                    },
+                    "linguagens": {
+                        "type": "array",
+                        "items": {
+                            "type": ["object", "null"],
+                            "required": [
+                                "nome"
+                            ],
+                            "properties": {
+                                "nome": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "observacoes": {
+                        "type": ["string","null"]
+                    },
+                    "ativo": {
+                        "type": "string"
+                    },
+                    "idCandidato": {
+                        "type": "number"
+                    },
+                    "genero": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

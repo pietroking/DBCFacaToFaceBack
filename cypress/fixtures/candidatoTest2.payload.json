@@ -1,0 +1,20 @@
+{
+    "nomeCompleto": "testeapiauto",
+    "cidade": "teste",
+    "estado": "teste",
+    "email": "testecandidato2@teste.com.br",
+    "trilha": {
+      "nome": "QA"
+    },
+    "edicao": {
+      "nome": "10"
+    },
+    "notaProva": 10,
+    "linguagens": [
+      {
+        "nome": "JAVA"
+      }
+    ],
+    "observacoes": "string",
+    "ativo": "T"
+  }

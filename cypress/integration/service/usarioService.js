@@ -1,26 +1,27 @@
 const baseUrl = Cypress.env('API_BASE');
-let token;
+import { acess } from "../../support/commands"; 
+// let token;
 
-before(() => {
-    cy.login().should((response) => {
-        expect(response.status).to.eq(201);
-        token = response.body;
-    });
-})
-Cypress.Commands.add("login", () => {
-    return cy.request({
-        method: 'POST',
-        url:`${baseUrl}/auth/fazer-login`,
-        failOnStatusCode: false,
-        body: {
-            "email": "julio.gabriel@dbccompany.com",
-            "senha": "123"
-        },
-    }).as('response').get('@response')
-})
+// before(() => {
+//     cy.login().should((response) => {
+//         expect(response.status).to.eq(201);
+//         token = response.body;
+//     });
+// })
+// Cypress.Commands.add("login", () => {
+//     return cy.request({
+//         method: 'POST',
+//         url:`${baseUrl}/auth/fazer-login`,
+//         failOnStatusCode: false,
+//         body: {
+//             "email": "julio.gabriel@dbccompany.com",
+//             "senha": "123"
+//         },
+//     }).as('response').get('@response')
+// })
 
 export default class UsuarioService{
-    GETusuarioLogadoRequest(){
+    GETusuarioLogadoRequest(token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/usuario/logado`,
@@ -31,7 +32,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    GETusuarioRequest(){
+    GETusuarioRequest(token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/usuario`,
@@ -42,7 +43,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    GETusuarioIdRequest(id){
+    GETusuarioIdRequest(id, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/usuario/id`,
@@ -56,7 +57,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    GETusuarioEmailRequest(email){
+    GETusuarioEmailRequest(email, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/usuario/email`,
@@ -70,7 +71,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    GETusuarioNomeRequest(name){
+    GETusuarioNomeRequest(name, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/usuario/findbynomecompleto`,
@@ -84,7 +85,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    GETusuarioRecuperarImagemRequest(email){
+    GETusuarioRecuperarImagemRequest(email, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/usuario/recuperar-imagem`,
@@ -98,7 +99,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    POSTusuarioRequest(payload, genero){
+    POSTusuarioRequest(payload, genero, token){
         return cy.request({
             method: 'POST',
             url:`${baseUrl}/usuario`,
@@ -113,7 +114,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    PUTusuarioRequest(payload,idUsuario, genero){
+    PUTusuarioRequest(payload,idUsuario, genero, token){
         return cy.request({
             method: 'PUT',
             url:`${baseUrl}/usuario/${idUsuario}`,
@@ -128,7 +129,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    PUTusuarioFotoRequest(email, foto){
+    PUTusuarioFotoRequest(email, foto, token){
         return cy.request({
             method: 'PUT',
             url:`${baseUrl}/usuario/upload-foto`,
@@ -149,7 +150,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    DELETElogicoUsuarioRequest(idUsuario){
+    DELETElogicoUsuarioRequest(idUsuario, token){
         return cy.request({
             method: 'DELETE',
             url:`${baseUrl}/usuario/${idUsuario}`,
@@ -160,7 +161,7 @@ export default class UsuarioService{
         }).as('response').get('@response')
     }
 
-    DELETEfisicoUsuarioRequest(idUsuario){
+    DELETEfisicoUsuarioRequest(idUsuario, token){
         return cy.request({
             method: 'DELETE',
             url:`${baseUrl}/usuario/delete-fisico/${idUsuario}`,
@@ -170,4 +171,41 @@ export default class UsuarioService{
             failOnStatusCode: false
         }).as('response').get('@response')
     }
+
+    contratoGetUsuario(contrato, acess){
+        this.GETusuarioRequest(acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetUsuarioLogado(contrato, acess){
+        this.GETusuarioLogadoRequest(acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetUsuarioId(contrato, acess, idUsuario){
+        this.GETusuarioIdRequest(idUsuario, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetUsuarioEmail(contrato, acess, email){
+        this.GETusuarioEmailRequest(email, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetUsuarioNome(contrato, acess, nome){
+        this.GETusuarioNomeRequest(nome, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetUsuarioImagem(contrato, acess, email){
+        this.GETusuarioRecuperarImagemRequest(email, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+    
 }

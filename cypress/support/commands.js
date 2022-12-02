@@ -24,3 +24,40 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
+import Ajv from "ajv";
+import "cypress-localstorage-commands";
+const baseUrl = Cypress.env('API_BASE');
+
+const ajv = new Ajv({ allErrors: true, verbose: true });
+
+export let acess;
+
+Cypress.Commands.add("login", () => {
+  return cy.request({
+      method: 'POST',
+      url:`${baseUrl}/auth/fazer-login`,
+      failOnStatusCode: false,
+      body: {
+          "email": "julio.gabriel@dbccompany.com",
+          "senha": "123"
+      },
+  }).as('response').get('@response');
+})
+
+Cypress.Commands.add("validaContrato", (contrato, response) => {
+    //pegar o arquivo (Schema) pasta fixtures e passar com parameto
+    cy.fixture(contrato).then((contrato) => {
+      // compilar esse arquivo, (jsonSchema)
+      const validate = ajv.compile(contrato);
+      // response  da api (validações)
+      const responseApi = validate(response.body);
+  
+      // Validação (Error)
+      if (!responseApi)
+        cy.log(validate.errors).then(() => {
+          throw new Error("Falha do contrato");
+        });
+    });
+  });
+
+  

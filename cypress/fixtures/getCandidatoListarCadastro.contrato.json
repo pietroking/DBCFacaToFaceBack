@@ -1,0 +1,92 @@
+{
+    "type": "object",
+    "required": [
+        "totalElementos",
+        "quantidadePaginas",
+        "pagina",
+        "tamanho",
+        "elementos"
+    ],
+    "properties": {
+        "totalElementos": {
+            "type": "number"
+        },
+        "quantidadePaginas": {
+            "type": "number"
+        },
+        "pagina": {
+            "type": "number"
+        },
+        "tamanho": {
+            "type": "number"
+        },
+        "elementos": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "idCandidato",
+                    "nomeCompleto",
+                    "email",
+                    "notaProva",
+                    "trilha",
+                    "edicao",
+                    "genero",
+                    "ativo",
+                    "estado",
+                    "cidade",
+                    "observacoes",
+                    "dado",
+                    "linguagemList"
+                ],
+                "properties": {
+                    "idCandidato": {
+                        "type": "number"
+                    },
+                    "nomeCompleto": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "notaProva": {
+                        "type": "number"
+                    },
+                    "trilha": {
+                        "type": "string"
+                    },
+                    "edicao": {
+                        "type": "string"
+                    },
+                    "genero": {
+                        "type": "string"
+                    },
+                    "ativo": {
+                        "type": "string"
+                    },
+                    "estado": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "observacoes": {
+                        "type": "string"
+                    },
+                    "dado": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "linguagemList": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

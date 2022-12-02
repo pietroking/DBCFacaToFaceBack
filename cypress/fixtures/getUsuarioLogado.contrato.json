@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "required": [
+        "email",
+        "nomeCompleto",
+        "perfis"
+    ],
+    "properties": {
+        "email": {
+            "type": "string"
+        },
+        "nomeCompleto": {
+            "type": "string"
+        },
+        "perfis": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "nome"
+                ],
+                "properties": {
+                    "nome": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

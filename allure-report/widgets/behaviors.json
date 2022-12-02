@@ -1,13 +1,24 @@
 {
-  "total" : 3,
+  "total" : 7,
   "items" : [ {
-    "uid" : "c63b552092d98022ca7e962c8da03d9f",
-    "name" : "Usuario-Controller",
+    "uid" : "3fd3affd9f87ef582aab6556af8eefc3",
+    "name" : "Contrato entrevista",
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 12,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "c63b552092d98022ca7e962c8da03d9f",
+    "name" : "Usuario-Controller",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
       "unknown" : 0,
       "total" : 13
     }
@@ -18,9 +29,42 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 4
+      "total" : 5
+    }
+  }, {
+    "uid" : "9c49eadb7b742eb7b44f61a5712c5b77",
+    "name" : "Contrato usuario",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "2592040a5677342175e87e8375aec031",
+    "name" : "Contrato candidato",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "92c1efee4d84e94292cadc073f4a644e",
+    "name" : "Entrevista-Controller",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

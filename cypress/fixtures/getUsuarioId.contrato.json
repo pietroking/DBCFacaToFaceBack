@@ -1,0 +1,62 @@
+{
+    "type": "object",
+    "required": [
+        "nomeCompleto",
+        "cidade",
+        "estado",
+        "email",
+        "trilha",
+        "perfis",
+        "ativo",
+        "idUsuario",
+        "genero"
+    ],
+    "properties": {
+        "nomeCompleto": {
+            "type": "string"
+        },
+        "cidade": {
+            "type": "string"
+        },
+        "estado": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "trilha": {
+            "type": "object",
+            "required": [
+                "nome"
+            ],
+            "properties": {
+                "nome": {
+                    "type": "string"
+                }
+            }
+        },
+        "perfis": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "nome"
+                ],
+                "properties": {
+                    "nome": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "ativo": {
+            "type": "string"
+        },
+        "idUsuario": {
+            "type": "number"
+        },
+        "genero": {
+            "type": "string"
+        }
+    }
+}

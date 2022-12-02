@@ -1,26 +1,28 @@
-const baseUrl = Cypress.env('API_BASE');
-let token;
+import { acess } from "../../support/commands";
 
-before(() => {
-    cy.login().should((response) => {
-        expect(response.status).to.eq(201);
-        token = response.body;
-    });
-})
-Cypress.Commands.add("login", () => {
-    return cy.request({
-        method: 'POST',
-        url:`${baseUrl}/auth/fazer-login`,
-        failOnStatusCode: false,
-        body: {
-            "email": "julio.gabriel@dbccompany.com",
-            "senha": "123"
-        },
-    }).as('response').get('@response')
-})
+const baseUrl = Cypress.env('API_BASE');
+// let token;
+
+// before(() => {
+//     cy.login().should((response) => {
+//         expect(response.status).to.eq(201);
+//         token = response.body;
+//     });
+// })
+// Cypress.Commands.add("login", () => {
+//     return cy.request({
+//         method: 'POST',
+//         url:`${baseUrl}/auth/fazer-login`,
+//         failOnStatusCode: false,
+//         body: {
+//             "email": "julio.gabriel@dbccompany.com",
+//             "senha": "123"
+//         },
+//     }).as('response').get('@response')
+// })
 
 export default class CandidatoService{
-    GETcandidatoRequest(){
+    GETcandidatoRequest(token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/candidato`,
@@ -31,7 +33,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    GETcandidatoEmailRequest(email){
+    GETcandidatoEmailRequest(email, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/candidato/findbyemails/${email}`,
@@ -42,7 +44,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    GETcandidatoRecuperarImagemRequest(email){
+    GETcandidatoRecuperarImagemRequest(email, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/candidato/recuperar-imagem`,
@@ -56,7 +58,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    GETcandidatoRecuperarCurriculo(email){
+    GETcandidatoRecuperarCurriculo(email, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/candidato/recuperar-curriculo`,
@@ -70,7 +72,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    GETcandidatoListaPrincipal(busca){
+    GETcandidatoListaPrincipal(nome, trilha, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/candidato/listar-candidato-principal-por-nome-ou-por-trilha`,
@@ -79,12 +81,13 @@ export default class CandidatoService{
                 authorization: token
             },
             qs: {
-                "busca":`${busca}`
+                "nomeCompleto":`${nome}`,
+                "nomeTrilha":`${trilha}`
             }
         }).as('response').get('@response')
     }
 
-    GETcandidatoListaCadasto(busca){
+    GETcandidatoListaCadasto(nome, trilha, token){
         return cy.request({
             method: 'GET',
             url:`${baseUrl}/candidato/listar-candidato-cadastro-por-nome-ou-por-trilha`,
@@ -93,12 +96,13 @@ export default class CandidatoService{
                 authorization: token
             },
             qs: {
-                "busca":`${busca}`
+                "nomeCompleto":`${nome}`,
+                "nomeTrilha":`${trilha}`
             }
         }).as('response').get('@response')
     }
 
-    POSTcandidatoRequest(payload, genero){
+    POSTcandidatoRequest(payload, genero, token){
         return cy.request({
             method: 'POST',
             url:`${baseUrl}/candidato`,
@@ -113,7 +117,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    PUTcandidatoRequest(payload,idCandidato, genero){
+    PUTcandidatoRequest(payload,idCandidato, genero, token){
         return cy.request({
             method: 'PUT',
             url:`${baseUrl}/candidato/${idCandidato}`,
@@ -128,7 +132,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    PUTcandidatoFotoRequest(email, foto){
+    PUTcandidatoFotoRequest(email, foto, token){
         return cy.request({
             method: 'PUT',
             url:`${baseUrl}/candidato/upload-foto`,
@@ -143,7 +147,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    PUTcandidatoCurriculoRequest(email, curriculo){
+    PUTcandidatoCurriculoRequest(email, curriculo, token){
         return cy.request({
             method: 'PUT',
             url:`${baseUrl}/candidato/upload-foto`,
@@ -158,7 +162,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    DELETElogicoCandidatoRequest(idCandidato){
+    DELETElogicoCandidatoRequest(idCandidato, token){
         return cy.request({
             method: 'DELETE',
             url:`${baseUrl}/candidato/${idCandidato}`,
@@ -169,7 +173,7 @@ export default class CandidatoService{
         }).as('response').get('@response')
     }
 
-    DELETEfisicoCandidatoRequest(idCandidato){
+    DELETEfisicoCandidatoRequest(idCandidato, token){
         return cy.request({
             method: 'DELETE',
             url:`${baseUrl}/candidato/delete-fisico/${idCandidato}`,
@@ -178,5 +182,41 @@ export default class CandidatoService{
             },
             failOnStatusCode: false
         }).as('response').get('@response')
+    }
+
+    contratoGetCandidato(contrato, acess){
+        this.GETcandidatoRequest(acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetCandidatoRecuperarImagem(contrato, email, acess){
+        this.GETcandidatoRecuperarImagemRequest(email, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetCandidatoListaPrincipal(contrato, nome, trilha, acess){
+        this.GETcandidatoListaPrincipal(nome, trilha, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetCandidatoListaCadastro(contrato, nome, trilha, acess){
+        this.GETcandidatoListaCadasto(nome, trilha, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetCandidatoEmail(contrato, email, acess){
+        this.GETcandidatoEmailRequest(email, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
+    }
+
+    contratoGetCandidatoCurriculo(contrato, email, acess){
+        this.GETcandidatoRecuperarCurriculo(email, acess).then((response) => {
+            cy.validaContrato(contrato, response);
+        })
     }
 }

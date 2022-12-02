@@ -1,37 +1,19 @@
 [ {
   "data" : {
-    "failed" : 1,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 37,
-    "unknown" : 0,
-    "total" : 38
-  }
-}, {
-  "data" : {
-    "failed" : 1,
-    "broken" : 0,
-    "skipped" : 0,
-    "passed" : 18,
-    "unknown" : 0,
-    "total" : 19
-  }
-}, {
-  "data" : {
     "failed" : 0,
     "broken" : 0,
     "skipped" : 0,
-    "passed" : 37,
+    "passed" : 47,
     "unknown" : 0,
-    "total" : 37
+    "total" : 47
   }
 }, {
   "data" : {
     "failed" : 1,
     "broken" : 0,
     "skipped" : 0,
-    "passed" : 20,
+    "passed" : 47,
     "unknown" : 0,
-    "total" : 21
+    "total" : 48
   }
 } ]
