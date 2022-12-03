@@ -22,11 +22,19 @@ context('Entrevista-Controller', () => {
             .feature('GET/entrevista')
             loginService.Login()
             .then((login) => {
+                candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', login.body).then((response) => {
+                    cy.wrap(response.body).as('candidato')
+                })
+                entrevistaService.POSTentrevistaRequest(entrevistaTest, login.body).then((response) => {
+                    cy.wrap(response.body).as('entrevista')
+                })
                 entrevistaService.GETentrevistaRequest(login.body)
                     .should((response) => {
                         expect(response.status).to.eq(200);
                         expect(response.body.elementos).that.is.not.empty;
                     })
+                cy.get('@entrevista').then(entrevista => entrevistaService.DELETEentrevistaRequest(entrevista.idEntrevista, login.body))
+                cy.get('@candidato').then(candidato => candidatoService.DELETEfisicoCandidatoRequest(candidato.idCandidato, login.body))
             })
     });
 
@@ -53,8 +61,8 @@ context('Entrevista-Controller', () => {
                         expect(response.body.candidatoDTO.genero).to.eq('MASCULINO');
                         expect(response.body.candidatoDTO.notaProva).to.eq(10);
                         expect(response.body.candidatoDTO.linguagens).that.is.not.empty;
-                        expect(response.body.usuarioDTO.email).to.eq('julio.gabriel@dbccompany.com');
-                        expect(response.body.usuarioDTO.nomeCompleto).to.eq('ADMIN');
+                        expect(response.body.usuarioDTO.email).to.eq('julio.gabriel@dbccompany.com.br');
+                        expect(response.body.usuarioDTO.nomeCompleto).to.eq('Julio');
                         expect(response.body.usuarioDTO.cidade).to.eq('PORTO ALEGRE');
                         expect(response.body.usuarioDTO.estado).to.eq('RIO GRANDE DO SUL');
                         expect(response.body.usuarioDTO.trilha.nome).to.eq('COLABORADOR');
@@ -80,7 +88,7 @@ context('Entrevista-Controller', () => {
                 entrevistaService.POSTentrevistaRequest(entrevistaErrorUsuarioTest, login.body)
                     .should((response) => {
                         expect(response.status).to.eq(400);
-                        expect(response.body.message).to.eq(`Usuário não encontrado`)
+                        expect(response.body.message).to.eq(`Usuário com o e-mail especificado não existe`)
                     })
             }) 
     });
@@ -147,7 +155,7 @@ context('Entrevista-Controller', () => {
             })
     });
 //////////////   PUT-POSITIVOS   //////////////
-    it.only('PUT - Atualizar entrevista', () => {
+    it('PUT - Atualizar entrevista', () => {
         cy.allure()
             .epic('Entrevista-Controller')
             .feature('PUT/entrevista')
@@ -170,8 +178,8 @@ context('Entrevista-Controller', () => {
                         expect(response.body.candidatoDTO.genero).to.eq('MASCULINO');
                         expect(response.body.candidatoDTO.notaProva).to.eq(10);
                         expect(response.body.candidatoDTO.linguagens).that.is.not.empty;
-                        expect(response.body.usuarioDTO.email).to.eq('julio.gabriel@dbccompany.com');
-                        expect(response.body.usuarioDTO.nomeCompleto).to.eq('ADMIN');
+                        expect(response.body.usuarioDTO.email).to.eq('julio.gabriel@dbccompany.com.br');
+                        expect(response.body.usuarioDTO.nomeCompleto).to.eq('Julio');
                         expect(response.body.usuarioDTO.cidade).to.eq('PORTO ALEGRE');
                         expect(response.body.usuarioDTO.estado).to.eq('RIO GRANDE DO SUL');
                         expect(response.body.usuarioDTO.trilha.nome).to.eq('COLABORADOR');

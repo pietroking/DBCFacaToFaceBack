@@ -1,0 +1,187 @@
+{
+  "uid" : "fa72d01f94bc8e9b",
+  "name" : "POST - Tentar criar candidato com trilha invalido",
+  "fullName" : "POST - Tentar criar candidato com trilha invalido",
+  "historyId" : "dc9a8b84e2b34065a960b965272740e7",
+  "time" : {
+    "start" : 1670045063501,
+    "stop" : 1670045063756,
+    "duration" : 255
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+      "time" : {
+        "start" : 1670045063508,
+        "stop" : 1670045063685,
+        "duration" : 177
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670045063685,
+        "stop" : 1670045063685,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670045063685,
+        "stop" : 1670045063686,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "POST 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato",
+      "time" : {
+        "start" : 1670045063687,
+        "stop" : 1670045063754,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670045063754,
+        "stop" : 1670045063754,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670045063754,
+        "stop" : 1670045063756,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **400** to equal **400**",
+      "time" : {
+        "start" : 1670045063756,
+        "stop" : 1670045063756,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "400"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **Trilha não encontrada!** to equal **Trilha não encontrada!**",
+      "time" : {
+        "start" : 1670045063756,
+        "stop" : 1670045063756,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Trilha não encontrada!"
+      }, {
+        "name" : "expected",
+        "value" : "Trilha não encontrada!"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Candidato-Controller"
+  }, {
+    "name" : "epic",
+    "value" : "Candidato-Controller"
+  }, {
+    "name" : "feature",
+    "value" : "POST/candidato"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fa72d01f94bc8e9b.json",
+  "parameterValues" : [ ]
+}

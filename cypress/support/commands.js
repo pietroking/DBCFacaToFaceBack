@@ -38,7 +38,7 @@ Cypress.Commands.add("login", () => {
       url:`${baseUrl}/auth/fazer-login`,
       failOnStatusCode: false,
       body: {
-          "email": "julio.gabriel@dbccompany.com",
+          "email": "julio.gabriel@dbccompany.com.br",
           "senha": "123"
       },
   }).as('response').get('@response');

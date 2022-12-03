@@ -24,8 +24,8 @@ context('Usuario-Controller', () => {
                     .should((response) => {
                         expect(response.status).to.eq(200);
                         expect(response.body).that.is.not.empty;
-                        expect(response.body.email).to.eq('julio.gabriel@dbccompany.com');
-                        expect(response.body.nomeCompleto).to.eq('ADMIN');
+                        expect(response.body.email).to.eq('julio.gabriel@dbccompany.com.br');
+                        expect(response.body.nomeCompleto).to.eq('Julio');
                         expect(response.body.perfis).that.is.not.empty;
                     })
             })
@@ -41,9 +41,9 @@ context('Usuario-Controller', () => {
                 .should((response) => {
                     expect(response.status).to.eq(200);
                     expect(response.body.elementos).that.is.not.empty;
-                    expect(response.body.elementos[0].email).to.eq('julio.gabriel@dbccompany.com');
-                    expect(response.body.elementos[0].nomeCompleto).to.eq('ADMIN');
-                    expect(response.body.elementos[0].perfis).that.is.not.empty;
+                    expect(response.body.elementos[3].email).to.eq('julio.gabriel@dbccompany.com.br');
+                    expect(response.body.elementos[3].nomeCompleto).to.eq('Julio');
+                    expect(response.body.elementos[3].perfis).that.is.not.empty;
                 })
             })
     });
@@ -54,16 +54,16 @@ context('Usuario-Controller', () => {
             .feature('GET/usuario/id')
             loginService.Login()
             .then((login) => {
-                usuarioService.GETusuarioIdRequest(1, login.body)
+                usuarioService.GETusuarioIdRequest(4, login.body)
                     .should((response) => {
                         expect(response.status).to.eq(200);
-                        expect(response.body.email).to.eq('julio.gabriel@dbccompany.com');
-                        expect(response.body.nomeCompleto).to.eq('ADMIN');
+                        expect(response.body.email).to.eq('julio.gabriel@dbccompany.com.br');
+                        expect(response.body.nomeCompleto).to.eq('Julio');
                         expect(response.body.cidade).to.eq('PORTO ALEGRE');
                         expect(response.body.estado).to.eq('RIO GRANDE DO SUL');
                         expect(response.body.trilha.nome).to.eq('COLABORADOR');
                         expect(response.body.genero).to.eq('MASCULINO');
-                        expect(response.body.idUsuario).to.eq(1);
+                        expect(response.body.idUsuario).to.eq(4);
                     })
             })
     });
@@ -74,16 +74,16 @@ context('Usuario-Controller', () => {
             .feature('GET/usuario/email')
             loginService.Login()
             .then((login) => {
-                usuarioService.GETusuarioEmailRequest('julio.gabriel@dbccompany.com', login.body)
+                usuarioService.GETusuarioEmailRequest('julio.gabriel@dbccompany.com.br', login.body)
                     .should((response) => {
                         expect(response.status).to.eq(200);
-                        expect(response.body.email).to.eq('julio.gabriel@dbccompany.com');
-                        expect(response.body.nomeCompleto).to.eq('ADMIN');
+                        expect(response.body.email).to.eq('julio.gabriel@dbccompany.com.br');
+                        expect(response.body.nomeCompleto).to.eq('Julio');
                         expect(response.body.cidade).to.eq('PORTO ALEGRE');
                         expect(response.body.estado).to.eq('RIO GRANDE DO SUL');
                         expect(response.body.trilha.nome).to.eq('COLABORADOR');
                         expect(response.body.genero).to.eq('MASCULINO');
-                        expect(response.body.idUsuario).to.eq(1);
+                        expect(response.body.idUsuario).to.eq(4);
                     })
             })
     });
@@ -94,7 +94,7 @@ context('Usuario-Controller', () => {
             .feature('GET/usuario/findbynomecompleto')
             loginService.Login()
             .then((login) => {
-                usuarioService.GETusuarioNomeRequest('ADMIN', login.body)
+                usuarioService.GETusuarioNomeRequest('Julio', login.body)
                     .should((response) => {
                         expect(response.status).to.eq(200);
                         expect(response.body.elementos).that.is.not.empty;
@@ -108,7 +108,7 @@ context('Usuario-Controller', () => {
             .feature('GET/usuario/recuperar-imagem')
             loginService.Login()
             .then((login) => {
-                usuarioService.GETusuarioRecuperarImagemRequest('julio.gabriel@dbccompany.com', login.body)
+                usuarioService.GETusuarioRecuperarImagemRequest('julio.gabriel@dbccompany.com.br', login.body)
                     .should((response) => {
                         expect(response.status).to.eq(200);
                         expect(response.body).that.is.not.empty;
@@ -372,60 +372,64 @@ context('Usuario-Controller', () => {
     });
 
 
-//     it.only('PUT - Upload foto passando email inexistente', () => {
-//         // const foto = cy.fixture('goku.jpg', 'binary').then(content => {
-//         //         // cy.get('[data-cy=upload-image]').attachFile(content, 'goku.jpg', 'image/jpeg')})
-//         //         cy.get('input[type="file"]').as('fileInput').attachFile('goku.jpg')})
-//         // cy.fixture('goku.jpg', 'binary').then(Cypress.Blob.binaryStringToBlob).then(content => {
-//         //     usuarioService.PUTusuarioFotoRequest(usuario.email, content)
-//         // const foto = cy.fixture('goku.jpg', 'binary').as('foto')
-//         // cy.get('input[type="file"]').then(function ($input){
-//         //     const blob = Cypress.Blob.base64StringToBlob(this.foto, 'image/png')
-//         //     $input.fileupload('add', { files: blob })
-//         // })
-//         cy.allure()
-//             .epic('Usuario-Controller')
-//             .feature('PUT/usuario/upload-foto')
-//             loginService.Login()
-//             .then((login) => {
-//                 usuarioService.POSTusuarioRequest(usuarioTest, 'MASCULINO', login.body).then((response) => {
-//                     cy.wrap(response.body).as('usuario')
-//                 })
-//                 cy.get('@usuario').then(usuario => {
-//                     cy.fixture('goku.jpg').then( image => {
-//                     const blob = Buffer.from(image, 'base64');
-//                     // const formData = new FormData();
-//                     // formData.append('image', blob, 'goku.jpg');
+    // it.only('PUT - Upload foto passando email inexistente', () => {
+    //     // const foto = cy.fixture('goku.jpg', 'binary').then(content => {
+    //     //         // cy.get('[data-cy=upload-image]').attachFile(content, 'goku.jpg', 'image/jpeg')})
+    //     //         cy.get('input[type="file"]').as('fileInput').attachFile('goku.jpg')})
+    //     // cy.fixture('goku.jpg', 'binary').then(Cypress.Blob.binaryStringToBlob).then(content => {
+    //     //     usuarioService.PUTusuarioFotoRequest(usuario.email, content)
+    //     // const foto = cy.fixture('goku.jpg', 'binary').as('foto')
+    //     // cy.get('input[type="file"]').then(function ($input){
+    //     //     const blob = Cypress.Blob.base64StringToBlob(this.foto, 'image/png')
+    //     //     $input.fileupload('add', { files: blob })
+    //     // })
+    //     cy.allure()
+    //         .epic('Usuario-Controller')
+    //         .feature('PUT/usuario/upload-foto')
+    //         loginService.Login()
+    //         .then((login) => {
+    //             usuarioService.POSTusuarioRequest(usuarioTest, 'MASCULINO', login.body).then((response) => {
+    //                 cy.wrap(response.body).as('usuario')
+    //             })
+    //             cy.get('@usuario').then(usuario => {
+    //                 const fileName = 'goku.jpg';
+    //                 const foto = cy.fixture(fileName).then(fileContent => {
+    //                     cy.get('file').attachFile({ fileContent, fileName, mimeType: 'image/jpeg' }, { subjectType: 'input' });
+    //                 });
+    //                 // cy.fixture('goku.jpg').then( image => {
+    //                 // const blob = Buffer.from(image, 'base64');
+    //                 // const formData = new FormData();
+    //                 // formData.append('image', blob, 'goku.jpg');
                   
-//                     usuarioService.PUTusuarioFotoRequest(usuario.email, blob, login.body)
-//                     // cy.fixture('goku.jpg', 'binary').then( image => {
-//                     //     const blob = Cypress.Blob.binaryStringToBlob(image, 'image/jpeg');
-//                     //     const formData = new FormData();
-//                     //     formData.append('image', blob, 'goku.jpg');
+    //                 usuarioService.PUTusuarioFotoRequest(usuario.email, foto, login.body)
+    //                 // cy.fixture('goku.jpg', 'binary').then( image => {
+    //                 //     const blob = Cypress.Blob.binaryStringToBlob(image, 'image/jpeg');
+    //                 //     const formData = new FormData();
+    //                 //     formData.append('image', blob, 'goku.jpg');
                       
-//                     //       cy.request(
-//                     //         {
-//                     //         method: 'PUT',
-//                     //         url:`http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/usuario/upload-foto`,
-//                     //         headers:{
-//                     //             authorization: 'eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYWNldG9mYWNlLWFwaSIsImp0aSI6Imp1bGlvLmdhYnJpZWxAZGJjY29tcGFueS5jb20iLCJDQVJHT1MiOlsiUk9MRV9BRE1JTiIsIlJPTEVfSU5TVFJVVE9SIiwiUk9MRV9HRVNUQU8iXSwiaWF0IjoxNjY5ODU3Mzk2LCJleHAiOjE2NzI1MzU3OTZ9.qYu70ES9OiiorZtn_Qt7FKI7jPgYfCfbxVtqDkIJvIQ',
-//                     //             'content-type': 'multipart/form-data'
-//                     //         },
-//                     //         qs: {
-//                     //             "email":`${usuario.email}`
-//                     //         },
-//                     //         multipart:true, 
-//                     //         body:formData,
-//                     //         failOnStatusCode: false
-//                     //       })
-//                     //     })
-//                 .should((response) => {
-//                     expect(response.status).to.eq(200);
-//                 })})
-//                 cy.get('@usuario').then(usuario => usuarioService.DELETEfisicoUsuarioRequest(usuario.idUsuario), login.body)
-//                 })
-//             })
-//     });
+    //                 //       cy.request(
+    //                 //         {
+    //                 //         method: 'PUT',
+    //                 //         url:`http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/usuario/upload-foto`,
+    //                 //         headers:{
+    //                 //             authorization: 'eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYWNldG9mYWNlLWFwaSIsImp0aSI6Imp1bGlvLmdhYnJpZWxAZGJjY29tcGFueS5jb20iLCJDQVJHT1MiOlsiUk9MRV9BRE1JTiIsIlJPTEVfSU5TVFJVVE9SIiwiUk9MRV9HRVNUQU8iXSwiaWF0IjoxNjY5ODU3Mzk2LCJleHAiOjE2NzI1MzU3OTZ9.qYu70ES9OiiorZtn_Qt7FKI7jPgYfCfbxVtqDkIJvIQ',
+    //                 //             'content-type': 'multipart/form-data'
+    //                 //         },
+    //                 //         qs: {
+    //                 //             "email":`${usuario.email}`
+    //                 //         },
+    //                 //         multipart:true, 
+    //                 //         body:formData,
+    //                 //         failOnStatusCode: false
+    //                 //       })
+    //                 //     })
+    //             .should((response) => {
+    //                 expect(response.status).to.eq(200);
+    //             })
+    //             cy.get('@usuario').then(usuario => usuarioService.DELETEfisicoUsuarioRequest(usuario.idUsuario), login.body)
+    //             })
+    //         })
+    // });
 })
 
 // cy.fixture('goku.jpg', 'binary').then( image => {

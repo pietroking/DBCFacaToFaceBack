@@ -1,0 +1,187 @@
+{
+  "uid" : "9e5bf2e187972ca6",
+  "name" : "Contrato - Validar contrato get candidato",
+  "fullName" : "Contrato - Validar contrato get candidato",
+  "historyId" : "1b3290a07784db38e7551f50b91245a2",
+  "time" : {
+    "start" : 1670045099668,
+    "stop" : 1670045100048,
+    "duration" : 380
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670045099681,
+        "stop" : 1670045099881,
+        "duration" : 200
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+        "time" : {
+          "start" : 1670045099682,
+          "stop" : 1670045099879,
+          "duration" : 197
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670045099879,
+          "stop" : 1670045099880,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670045099880,
+          "stop" : 1670045099881,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato",
+      "time" : {
+        "start" : 1670045099882,
+        "stop" : 1670045100013,
+        "duration" : 131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670045100013,
+        "stop" : 1670045100013,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670045100013,
+        "stop" : 1670045100014,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "validaContrato (\"getCandidato.contrato\"; \"Object [Object: null prototype] { body: Object [Object: null prototype] { totalElementos: 5, quantidadePaginas: 1, pagina: 0, tamanho: 20, elementos: [Array] }, headers: Object [Object: null prototype] { date: 'Sat, 03 Dec 2022 05:21:25 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', connection: 'keep-alive', vary: 'Origin, Access-Control-Request-Method, A'... 29 more characters, 'set-cookie': [Array], 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'cache-control': 'no-cache, no-store, max-age=0, must-reva'... 6 more characters, pragma: 'no-cache', expires: '0', 'access-control-allow-origin': '*', 'access-control-allow-credentials': 'true', 'access-control-allow-methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS', 'access-control-allow-headers': 'DNT,Keep-Alive,User-Agent,X-Requested-Wi'... 67 more characters, 'access-control-max-age': '1728000' }, status: 200, statusText: 'OK', isOkStatusCode: true, requestHeaders: Object [Object: null prototype] { Connection: 'keep-alive', authorization: 'eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYWNldG9'... 229 more characters, 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64'... 104 more characters, accept: '*/*', cookie: 'JSESSIONID=CEA57DCEDA611FB89C1206E952F02'... 3 more characters, 'accept-encoding': 'gzip, deflate' }, duration: 126, allRequestResponses: [ [Object] ] }\")",
+      "time" : {
+        "start" : 1670045100015,
+        "stop" : 1670045100047,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"getCandidato.contrato\")",
+        "time" : {
+          "start" : 1670045100015,
+          "stop" : 1670045100023,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 9
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contrato GET/candidato"
+  }, {
+    "name" : "epic",
+    "value" : "Contrato candidato"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9e5bf2e187972ca6.json",
+  "parameterValues" : [ ]
+}

@@ -23,15 +23,26 @@
       "total" : 18
     }
   }, {
+    "uid" : "e017a74e25605bdb8f23224a28d75712",
+    "name" : "Entrevista-Controller",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
     "uid" : "1cd9ab01ef630307b6e02e77de9500e2",
     "name" : "Contrato GET/usuario",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 5
+      "total" : 6
     }
   }, {
     "uid" : "ef49daefbebee69479875c5f7414977d",
@@ -47,17 +58,6 @@
   }, {
     "uid" : "4d1a673355d7e827322cd8847e578746",
     "name" : "teste",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "e017a74e25605bdb8f23224a28d75712",
-    "name" : "Entrevista-Controller",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

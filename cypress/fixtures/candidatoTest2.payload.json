@@ -1,5 +1,5 @@
 {
-    "nomeCompleto": "testeapiauto",
+    "nomeCompleto": "testeapiauto2",
     "cidade": "teste",
     "estado": "teste",
     "email": "testecandidato2@teste.com.br",
@@ -7,7 +7,7 @@
       "nome": "QA"
     },
     "edicao": {
-      "nome": "10"
+      "nome": "10ª Edição"
     },
     "notaProva": 10,
     "linguagens": [

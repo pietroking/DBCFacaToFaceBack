@@ -1,0 +1,124 @@
+{
+  "uid" : "fdab18417eb7fd63",
+  "name" : "pesquisa2222",
+  "fullName" : "pesquisa2222",
+  "historyId" : "cac808ecbd5cba84fad1be46d7c56533",
+  "time" : {
+    "start" : 1670045070954,
+    "stop" : 1670045073083,
+    "duration" : 2129
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "visit https://www.google.com/",
+      "time" : {
+        "start" : 1670045070963,
+        "stop" : 1670045073082,
+        "duration" : 2119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 /complete/search?q&cp=0&client=gws-wiz&xssi=t&hl=pt-BR&authuser=0&psi=j92KY-CNB7Pr1AGU2Y_IDg.1670045071498&nolsbt=1&dpr=1",
+      "time" : {
+        "start" : 1670045073081,
+        "stop" : 1670045073082,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 204 /client_204?cs=2",
+      "time" : {
+        "start" : 1670045073082,
+        "stop" : 1670045073082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 /xjs/_/js/md=1/k=xjs.s.pt_BR.NSoJ3Bwdjvc.O/am=gABQQYACgAMAgAAABABmAAEAAAAAAIAAAIwAgqdMAhAQekAMBsAyCQACAAQR_RABAIABACAAiwGAAAAAAMgfgIAnAGAwYQEAAAAAAAAAEMASBAM3SBQEAAEAAAAAAACUafLiABAEAQ/rs=ACT90oEQBbKTzeJ4g9EPDwpKh0CXDEFCzA",
+      "time" : {
+        "start" : 1670045073082,
+        "stop" : 1670045073082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "POST https://play.google.com/log?format=json&hasfast=true",
+      "time" : {
+        "start" : 1670045073082,
+        "stop" : 1670045073082,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "teste"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fdab18417eb7fd63.json",
+  "parameterValues" : [ ]
+}

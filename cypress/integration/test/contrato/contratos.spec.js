@@ -29,7 +29,7 @@ context('Contrato GET/candidato', () => {
         })
     });
 
-    // it('Contrato - Validar contrato get candidato lista principal', () => {
+    // it.only('Contrato - Validar contrato get candidato lista principal', () => {
     //     cy.allure().epic('Contrato candidato');
     //     cy.login()
     //     .then((response) => {
@@ -122,16 +122,12 @@ context('Contrato GET/usuario', () => {
         })
     });
 
-    // it('Contrato - Validar contrato get usuario imagem', () => {
-    //     cy.allure().epic('Contrato usuario');
-    //     cy.login()
-    //     .then((response) => {
-    //         usuarioService.POSTusuarioRequest(usuarioTest, 'MASCULINO', response.body).then((usuario) => {
-    //             usuarioService.contratoGetUsuarioImagem('.contrato', response.body, usuario.body.idUsuario)})
-    //             usuarioService.DELETEfisicoUsuarioRequest(usuario.body.idUsuario, response.body)
-    //         })
-    //     })
-    // });
+    it('Contrato - Validar contrato get usuario imagem', () => {
+        cy.allure().epic('Contrato usuario');
+        cy.login()
+        .then((response) => {
+                usuarioService.contratoGetUsuarioImagem('getUsuarioImagem.contrato', response.body, 'julio.gabriel@dbccompany.com.br')})
+        })
 })
 
 context('Contrato GET/entrevista', () => {
@@ -142,14 +138,15 @@ context('Contrato GET/entrevista', () => {
     //         entrevistaService.contratoGetEntrevista('getEntrevista.contrato', response.body)})
     // });
 
-    // it.only('Contrato - Validar contrato get entrevista por mes/ano', () => {
+    // it('Contrato - Validar contrato get entrevista por mes/ano', () => {
     //     cy.allure().epic('Contrato entrevista');
     //     cy.login()
     //     .then((response) => {
-    //         candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((response) => {
+    //         candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((candidato) => {
     //             entrevistaService.POSTentrevistaRequest(entrevistaTest, response.body).then((entrevista) => {
     //                 entrevistaService.contratoGetEntrevistaMes('getListarPorMes.contrato', response.body, 12, 2022)
     //                 entrevistaService.DELETEentrevistaRequest(entrevista.body.idEntrevista, response.body)
+    //                 candidatoService.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, response.body)
     //             })
     //         })
     //     })    

@@ -1,0 +1,184 @@
+{
+  "uid" : "3c2521a72fdd039e",
+  "name" : "GET - Listar candidatos",
+  "fullName" : "GET - Listar candidatos",
+  "historyId" : "06ab2281fe96c44849eb1318e2a22ea8",
+  "time" : {
+    "start" : 1670045060436,
+    "stop" : 1670045061119,
+    "duration" : 683
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+      "time" : {
+        "start" : 1670045060450,
+        "stop" : 1670045060947,
+        "duration" : 497
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670045060947,
+        "stop" : 1670045060947,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670045060947,
+        "stop" : 1670045060949,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato",
+      "time" : {
+        "start" : 1670045060950,
+        "stop" : 1670045061111,
+        "duration" : 161
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670045061111,
+        "stop" : 1670045061112,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670045061112,
+        "stop" : 1670045061118,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670045061117,
+        "stop" : 1670045061117,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "assert expected **[ Array(5) ]** not to be empty",
+      "time" : {
+        "start" : 1670045061118,
+        "stop" : 1670045061118,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  {\n    \"nomeCompleto\": \"Julio Rocha\",\n    \"cidade\": \"string\",\n    \"estado\": \"string\",\n    \"email\": \"julio.gabriel@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"BACKEND\"\n    },\n    \"edicao\": {\n      \"nome\": \"10ª Edição\"\n    },\n    \"notaProva\": 10,\n    \"linguagens\": [\n      {\n        \"nome\": \"JAVA\"\n      }\n    ],\n    \"observacoes\": \"string\",\n    \"ativo\": \"T\",\n    \"idCandidato\": 1,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"Bruno rocha\",\n    \"cidade\": \"Santos\",\n    \"estado\": \"SP\",\n    \"email\": \"bruno.bardu@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"QA\"\n    },\n    \"edicao\": {\n      \"nome\": \"10ª Edição\"\n    },\n    \"notaProva\": 10,\n    \"linguagens\": [],\n    \"observacoes\": \"string\",\n    \"ativo\": \"T\",\n    \"idCandidato\": 2,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"Teste Front\",\n    \"cidade\": \"teste\",\n    \"estado\": \"teste\",\n    \"email\": \"teste@teste.com\",\n    \"trilha\": {\n      \"nome\": \"QA\"\n    },\n    \"edicao\": {\n      \"nome\": \"11ª Edição\"\n    },\n    \"notaProva\": 0,\n    \"linguagens\": [],\n    \"observacoes\": \"teste\",\n    \"ativo\": \"T\",\n    \"idCandidato\": 3,\n    \"genero\": \"OUTRO\"\n  },\n  {\n    \"nomeCompleto\": \"Yuri Nunes Atzler\",\n    \"cidade\": \"faxinal do soturno\",\n    \"estado\": \"rs\",\n    \"email\": \"atzleryuri@gmail.com\",\n    \"trilha\": {\n      \"nome\": \"BACKEND\"\n    },\n    \"edicao\": {\n      \"nome\": \"10ª Edição\"\n    },\n    \"notaProva\": 0,\n    \"linguagens\": [\n      {\n        \"nome\": \"JS\"\n      }\n    ],\n    \"observacoes\": null,\n    \"ativo\": \"F\",\n    \"idCandidato\": 4,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"Marta Golpista\",\n    \"cidade\": \"Belo Horizonte\",\n    \"estado\": \"MG\",\n    \"email\": \"pietro.bianchi@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"QA\"\n    },\n    \"edicao\": {\n      \"nome\": \"10ª Edição\"\n    },\n    \"notaProva\": 0,\n    \"linguagens\": [],\n    \"observacoes\": null,\n    \"ativo\": \"T\",\n    \"idCandidato\": 10,\n    \"genero\": \"MASCULINO\"\n  }\n]"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Candidato-Controller"
+  }, {
+    "name" : "epic",
+    "value" : "Candidato-Controller"
+  }, {
+    "name" : "feature",
+    "value" : "GET/candidato"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3c2521a72fdd039e.json",
+  "parameterValues" : [ ]
+}

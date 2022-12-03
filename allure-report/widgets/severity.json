@@ -1,470 +1,560 @@
 [ {
-  "uid" : "95425c9d99029478",
-  "name" : "PUT - Atualizar usuario",
+  "uid" : "5488509002c4618a",
+  "name" : "POST - Criar entrevista",
   "time" : {
-    "start" : 1669953540893,
-    "stop" : 1669953542053,
-    "duration" : 1160
+    "start" : 1670045077534,
+    "stop" : 1670045078793,
+    "duration" : 1259
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9aacc8505ae3c4d6",
-  "name" : "DELETE - Tentar tornar usuario inexistente inativo",
-  "time" : {
-    "start" : 1669953525120,
-    "stop" : 1669953525358,
-    "duration" : 238
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6082e10cccd7252b",
-  "name" : "POST - Tentar criar usuario passando trilha errada",
-  "time" : {
-    "start" : 1669953540169,
-    "stop" : 1669953540527,
-    "duration" : 358
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3f3c4bf951f771a4",
-  "name" : "GET - Tentar listar usuario por ID inexistente",
-  "time" : {
-    "start" : 1669953537305,
-    "stop" : 1669953537552,
-    "duration" : 247
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a36e066d7fced91d",
-  "name" : "DELETE - Tornar usuario inativo",
-  "time" : {
-    "start" : 1669953544173,
-    "stop" : 1669953545296,
-    "duration" : 1123
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c99c63ef875f8d1d",
-  "name" : "PUT - Tentar atualizar candidato com email em branco",
-  "time" : {
-    "start" : 1669953523847,
-    "stop" : 1669953524241,
-    "duration" : 394
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e4f24ae87b3f854a",
-  "name" : "PUT - Tentar atualizar usuario passando perfil errado",
-  "time" : {
-    "start" : 1669953543079,
-    "stop" : 1669953544170,
-    "duration" : 1091
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b96aacabaf1848ef",
-  "name" : "GET - Tentar listar candato por email inexistente",
-  "time" : {
-    "start" : 1669953520427,
-    "stop" : 1669953520682,
-    "duration" : 255
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d974bb1b69c332b9",
-  "name" : "Contrato - Validar contrato get usuario idUsuario",
-  "time" : {
-    "start" : 1669953550752,
-    "stop" : 1669953551886,
-    "duration" : 1134
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "da6306bd888275f8",
-  "name" : "Contrato - Validar contrato get usuario nome",
-  "time" : {
-    "start" : 1669953553116,
-    "stop" : 1669953554165,
-    "duration" : 1049
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1ef73655e8e78bea",
-  "name" : "PUT - Tentar atualizar candidato com email invalido",
-  "time" : {
-    "start" : 1669953523026,
-    "stop" : 1669953523423,
-    "duration" : 397
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "90dc0fd32fb775c6",
+  "uid" : "80e2cceb86bd4dd1",
   "name" : "Contrato - Validar contrato get usuario logado",
   "time" : {
-    "start" : 1669953550493,
-    "stop" : 1669953550750,
-    "duration" : 257
+    "start" : 1670045100782,
+    "stop" : 1670045101046,
+    "duration" : 264
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "271fc2bd6a8cd813",
-  "name" : "GET - Listar usuarios por nome",
-  "time" : {
-    "start" : 1669953536701,
-    "stop" : 1669953536962,
-    "duration" : 261
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3e5cf77236dd39d6",
-  "name" : "POST - Tentar criar candidato com trilha invalido",
-  "time" : {
-    "start" : 1669953521811,
-    "stop" : 1669953522050,
-    "duration" : 239
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "eb5b9c82c6a12784",
-  "name" : "DELETE - Deletar usuario do sistema",
-  "time" : {
-    "start" : 1669953524721,
-    "stop" : 1669953525117,
-    "duration" : 396
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9abf14e1df63861c",
-  "name" : "GET - Tentar listar usuario por email inexistente",
-  "time" : {
-    "start" : 1669953537555,
-    "stop" : 1669953537798,
-    "duration" : 243
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4318162510f30dcb",
-  "name" : "GET - Listar candidatos por nome ou trilha",
-  "time" : {
-    "start" : 1669953520177,
-    "stop" : 1669953520425,
-    "duration" : 248
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8b27a90b6adcb730",
-  "name" : "GET - Listar usuario por ID",
-  "time" : {
-    "start" : 1669953536108,
-    "stop" : 1669953536440,
-    "duration" : 332
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4f018dac5d5f2f86",
-  "name" : "GET - Recuperar imagem de usuario",
-  "time" : {
-    "start" : 1669953536965,
-    "stop" : 1669953537302,
-    "duration" : 337
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c9ac7313e41afb17",
-  "name" : "Contrato - Validar contrato get usuario",
-  "time" : {
-    "start" : 1669953550198,
-    "stop" : 1669953550491,
-    "duration" : 293
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "25e3b7a3b4d4770a",
-  "name" : "Contrato - Validar contrato get candidato",
-  "time" : {
-    "start" : 1669953548939,
-    "stop" : 1669953549277,
-    "duration" : 338
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8dc44a0d47ec6691",
-  "name" : "POST - Tentar criar usuario passando perfil errado",
-  "time" : {
-    "start" : 1669953540529,
-    "stop" : 1669953540891,
-    "duration" : 362
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c6dc21b4bb2c842c",
-  "name" : "GET - Listar candidatos",
-  "time" : {
-    "start" : 1669953519126,
-    "stop" : 1669953519644,
-    "duration" : 518
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4ad9f4bb87b8292c",
-  "name" : "GET - Tentar listar usuarios por nome inexistente",
-  "time" : {
-    "start" : 1669953537800,
-    "stop" : 1669953538051,
-    "duration" : 251
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6cc81db68c8f9d29",
-  "name" : "PUT - Tentar atualizar candidato passando id inexistente",
-  "time" : {
-    "start" : 1669953522781,
-    "stop" : 1669953523024,
-    "duration" : 243
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "23449be93c894de7",
-  "name" : "PUT - Atualizar candidato",
-  "time" : {
-    "start" : 1669953522301,
-    "stop" : 1669953522779,
-    "duration" : 478
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "36eab97132510405",
-  "name" : "DELETE - Tentar deletar usuario inexistente do sistema",
-  "time" : {
-    "start" : 1669953546558,
-    "stop" : 1669953546834,
-    "duration" : 276
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "262ddcad1b32424e",
-  "name" : "DELETE - Tentar tornar usuario inexistente inativo",
-  "time" : {
-    "start" : 1669953546313,
-    "stop" : 1669953546556,
-    "duration" : 243
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1e01b715b80d4aef",
-  "name" : "Contrato - Validar contrato get usuario email",
-  "time" : {
-    "start" : 1669953551889,
-    "stop" : 1669953553113,
-    "duration" : 1224
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1aa9551c4c1529c5",
-  "name" : "DELETE - Tornar candidato inativo",
-  "time" : {
-    "start" : 1669953524244,
-    "stop" : 1669953524719,
-    "duration" : 475
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f49f499436682cf",
-  "name" : "POST - Tentar criar candidato com email em branco",
-  "time" : {
-    "start" : 1669953522053,
-    "stop" : 1669953522298,
-    "duration" : 245
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "44b39407b4be7f34",
-  "name" : "PUT - Tentar atualizar usuario passando trilha errada",
-  "time" : {
-    "start" : 1669953542055,
-    "stop" : 1669953543077,
-    "duration" : 1022
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9f93ffb8712b6c3a",
-  "name" : "POST - Tentar criar usuario com email ja cadastrado",
-  "time" : {
-    "start" : 1669953539169,
-    "stop" : 1669953540166,
-    "duration" : 997
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "99d9d5904736b4a4",
-  "name" : "pesquisa2222",
-  "time" : {
-    "start" : 1669953528904,
-    "stop" : 1669953531070,
-    "duration" : 2166
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b1e459c6a57e4703",
-  "name" : "PUT - Tentar atualizar candidato com trilha invalido",
-  "time" : {
-    "start" : 1669953523427,
-    "stop" : 1669953523844,
-    "duration" : 417
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c03b24a0f869fce7",
+  "uid" : "c5c30b5202ed69c3",
   "name" : "PUT - Atualizar entrevista",
   "time" : {
-    "start" : 1669953532814,
-    "stop" : 1669953534109,
-    "duration" : 1295
+    "start" : 1670045081820,
+    "stop" : 1670045082971,
+    "duration" : 1151
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6e5d4413e74e0e39",
+  "uid" : "3121f633670fa36f",
+  "name" : "Contrato - Validar contrato get usuario nome",
+  "time" : {
+    "start" : 1670045103405,
+    "stop" : 1670045104529,
+    "duration" : 1124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7cef99f01217408e",
+  "name" : "GET - Listar entrevistas",
+  "time" : {
+    "start" : 1670045074987,
+    "stop" : 1670045077529,
+    "duration" : 2542
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fdab18417eb7fd63",
+  "name" : "pesquisa2222",
+  "time" : {
+    "start" : 1670045070954,
+    "stop" : 1670045073083,
+    "duration" : 2129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cb54e38db992ece",
   "name" : "DELETE - Deletar usuario do sistema",
   "time" : {
-    "start" : 1669953545299,
-    "stop" : 1669953546310,
-    "duration" : 1011
+    "start" : 1670045096155,
+    "stop" : 1670045097161,
+    "duration" : 1006
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f94f06aec082e932",
-  "name" : "POST - Criar usuario",
+  "uid" : "adea4766ae03f51d",
+  "name" : "POST - Tentar criar entrevista passando usuario invalido",
   "time" : {
-    "start" : 1669953538054,
-    "stop" : 1669953539166,
-    "duration" : 1112
+    "start" : 1670045078795,
+    "stop" : 1670045079039,
+    "duration" : 244
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d58967b2b44a946b",
-  "name" : "GET - Visualizar usuario logado",
+  "uid" : "d26a954166c7f5bf",
+  "name" : "POST - Tentar criar usuario com email ja cadastrado",
   "time" : {
-    "start" : 1669953535491,
-    "stop" : 1669953535762,
-    "duration" : 271
+    "start" : 1670045089936,
+    "stop" : 1670045090967,
+    "duration" : 1031
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "331a375e3cf33ce1",
-  "name" : "POST - Tentar criar candidato com email ja cadastrado",
-  "time" : {
-    "start" : 1669953521144,
-    "stop" : 1669953521558,
-    "duration" : 414
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f129252fc371115c",
+  "uid" : "323d83bb8c14e2e1",
   "name" : "GET - Listar candidato por email",
   "time" : {
-    "start" : 1669953519649,
-    "stop" : 1669953520175,
-    "duration" : 526
+    "start" : 1670045061124,
+    "stop" : 1670045061560,
+    "duration" : 436
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1e9fe6d95a15b51e",
-  "name" : "DELETE - Tentar deletar usuario inexistente do sistema",
+  "uid" : "3c2521a72fdd039e",
+  "name" : "GET - Listar candidatos",
   "time" : {
-    "start" : 1669953525360,
-    "stop" : 1669953525637,
-    "duration" : 277
+    "start" : 1670045060436,
+    "stop" : 1670045061119,
+    "duration" : 683
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9aaa802f518f9ab5",
-  "name" : "GET - Listar usuario por email",
+  "uid" : "4e28b2102f3c3972",
+  "name" : "DELETE - Deletar entrevista",
   "time" : {
-    "start" : 1669953536443,
-    "stop" : 1669953536698,
-    "duration" : 255
+    "start" : 1670045083237,
+    "stop" : 1670045084280,
+    "duration" : 1043
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "187ca5d18a969a78",
-  "name" : "GET - Listar usuarios",
+  "uid" : "7be604e5d26ba29a",
+  "name" : "PUT - Tentar atualizar usuario passando perfil errado",
   "time" : {
-    "start" : 1669953535767,
-    "stop" : 1669953536106,
-    "duration" : 339
+    "start" : 1670045093998,
+    "stop" : 1670045095056,
+    "duration" : 1058
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "687d99b72e8c4414",
-  "name" : "Contrato - Validar contrato get candidato findbyemail",
+  "uid" : "4fff555c8f23be2",
+  "name" : "GET - Recuperar imagem de usuario",
   "time" : {
-    "start" : 1669953549280,
-    "stop" : 1669953550195,
-    "duration" : 915
+    "start" : 1670045087525,
+    "stop" : 1670045087845,
+    "duration" : 320
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "33690b4abc08283b",
-  "name" : "POST - Tentar criar candidato com email invalido",
+  "uid" : "7016486fe19f988f",
+  "name" : "DELETE - Deletar usuario do sistema",
   "time" : {
-    "start" : 1669953521560,
-    "stop" : 1669953521809,
+    "start" : 1670045066726,
+    "stop" : 1670045067142,
+    "duration" : 416
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd88801040e3cae9",
+  "name" : "POST - Tentar criar entrevista passando candidato invalido",
+  "time" : {
+    "start" : 1670045079041,
+    "stop" : 1670045079358,
+    "duration" : 317
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "435629a56ebb0ce8",
+  "name" : "POST - Tentar criar usuario passando trilha errada",
+  "time" : {
+    "start" : 1670045090970,
+    "stop" : 1670045091545,
+    "duration" : 575
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e0451f879811c97",
+  "name" : "POST - Tentar criar candidato com email em branco",
+  "time" : {
+    "start" : 1670045063758,
+    "stop" : 1670045064012,
+    "duration" : 254
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28b16ea4e2790c0a",
+  "name" : "DELETE - Tentar tornar usuario inexistente inativo",
+  "time" : {
+    "start" : 1670045097163,
+    "stop" : 1670045097412,
     "duration" : 249
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "602ed309af6ba97",
+  "uid" : "fa72d01f94bc8e9b",
+  "name" : "POST - Tentar criar candidato com trilha invalido",
+  "time" : {
+    "start" : 1670045063501,
+    "stop" : 1670045063756,
+    "duration" : 255
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "595ec2642b3da6b2",
+  "name" : "GET - Tentar listar usuarios por nome inexistente",
+  "time" : {
+    "start" : 1670045088366,
+    "stop" : 1670045088822,
+    "duration" : 456
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a15686302289006",
+  "name" : "POST - Tentar criar usuario passando perfil errado",
+  "time" : {
+    "start" : 1670045091547,
+    "stop" : 1670045091923,
+    "duration" : 376
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4c5cc9f15c83e79",
+  "name" : "Contrato - Validar contrato get usuario imagem",
+  "time" : {
+    "start" : 1670045104532,
+    "stop" : 1670045104949,
+    "duration" : 417
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "115ca67bf8d6d406",
+  "name" : "PUT - Tentar atualizar entrevista",
+  "time" : {
+    "start" : 1670045082974,
+    "stop" : 1670045083234,
+    "duration" : 260
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf9e65d4c7a261b0",
+  "name" : "GET - Listar candidatos por nome ou trilha",
+  "time" : {
+    "start" : 1670045061563,
+    "stop" : 1670045061982,
+    "duration" : 419
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c6fe231f0b8a8e1",
+  "name" : "GET - Listar usuario por email",
+  "time" : {
+    "start" : 1670045086990,
+    "stop" : 1670045087255,
+    "duration" : 265
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c88165ae4b00344c",
+  "name" : "GET - Visualizar usuario logado",
+  "time" : {
+    "start" : 1670045086067,
+    "stop" : 1670045086416,
+    "duration" : 349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "343193f23a7ee1f7",
+  "name" : "DELETE - Tentar tornar usuario inexistente inativo",
+  "time" : {
+    "start" : 1670045067144,
+    "stop" : 1670045067403,
+    "duration" : 259
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50a7392f4445a04a",
+  "name" : "POST - Criar usuario",
+  "time" : {
+    "start" : 1670045088824,
+    "stop" : 1670045089933,
+    "duration" : 1109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "975e1038cc246828",
+  "name" : "GET - Listar usuarios",
+  "time" : {
+    "start" : 1670045086421,
+    "stop" : 1670045086711,
+    "duration" : 290
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "36302fdf8b729567",
+  "name" : "DELETE - Tornar usuario inativo",
+  "time" : {
+    "start" : 1670045095058,
+    "stop" : 1670045096153,
+    "duration" : 1095
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe30bc2b374e65f1",
+  "name" : "POST - Tentar criar entrevista passando um horario ja marcado",
+  "time" : {
+    "start" : 1670045080717,
+    "stop" : 1670045081818,
+    "duration" : 1101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e66913908a59b276",
+  "name" : "DELETE - Tentar deletar usuario inexistente do sistema",
+  "time" : {
+    "start" : 1670045097415,
+    "stop" : 1670045097672,
+    "duration" : 257
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "948e1814343cc15a",
+  "name" : "GET - Tentar listar candato por email inexistente",
+  "time" : {
+    "start" : 1670045061984,
+    "stop" : 1670045062324,
+    "duration" : 340
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e5bf2e187972ca6",
+  "name" : "Contrato - Validar contrato get candidato",
+  "time" : {
+    "start" : 1670045099668,
+    "stop" : 1670045100048,
+    "duration" : 380
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a7a4482400bf81b",
+  "name" : "Contrato - Validar contrato get usuario",
+  "time" : {
+    "start" : 1670045100477,
+    "stop" : 1670045100778,
+    "duration" : 301
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e8034b01b225f0b",
+  "name" : "PUT - Tentar atualizar candidato com email invalido",
+  "time" : {
+    "start" : 1670045064688,
+    "stop" : 1670045065111,
+    "duration" : 423
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58ab3911660e1370",
+  "name" : "Contrato - Validar contrato get usuario email",
+  "time" : {
+    "start" : 1670045102333,
+    "stop" : 1670045103402,
+    "duration" : 1069
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea57f610c5022e84",
+  "name" : "GET - Tentar listar usuario por ID inexistente",
+  "time" : {
+    "start" : 1670045087847,
+    "stop" : 1670045088102,
+    "duration" : 255
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72bd5df47cb8d863",
+  "name" : "POST - Tentar criar candidato com email invalido",
+  "time" : {
+    "start" : 1670045063246,
+    "stop" : 1670045063499,
+    "duration" : 253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0fcf0efa077c1c3",
+  "name" : "PUT - Atualizar candidato",
+  "time" : {
+    "start" : 1670045064014,
+    "stop" : 1670045064438,
+    "duration" : 424
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd5500b268abc30",
+  "name" : "GET - Listar usuario por ID",
+  "time" : {
+    "start" : 1670045086713,
+    "stop" : 1670045086987,
+    "duration" : 274
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c7ed969f064055b",
+  "name" : "GET - Listar usuarios por nome",
+  "time" : {
+    "start" : 1670045087258,
+    "stop" : 1670045087523,
+    "duration" : 265
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc5dfa5491090138",
+  "name" : "DELETE - Tornar candidato inativo",
+  "time" : {
+    "start" : 1670045066202,
+    "stop" : 1670045066723,
+    "duration" : 521
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4a76116ddfec529",
+  "name" : "PUT - Tentar atualizar candidato passando id inexistente",
+  "time" : {
+    "start" : 1670045064440,
+    "stop" : 1670045064685,
+    "duration" : 245
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f8ee5e7cf0d9eba",
+  "name" : "PUT - Tentar atualizar candidato com trilha invalido",
+  "time" : {
+    "start" : 1670045065113,
+    "stop" : 1670045065769,
+    "duration" : 656
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fde0cea5b7fd7ff2",
+  "name" : "POST - Tentar criar candidato com email ja cadastrado",
+  "time" : {
+    "start" : 1670045062809,
+    "stop" : 1670045063244,
+    "duration" : 435
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7747c2d1e1e0f743",
   "name" : "POST - Criar candidato",
   "time" : {
-    "start" : 1669953520684,
-    "stop" : 1669953521141,
-    "duration" : 457
+    "start" : 1670045062327,
+    "stop" : 1670045062807,
+    "duration" : 480
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1019e3751930f9c9",
+  "name" : "Contrato - Validar contrato get usuario idUsuario",
+  "time" : {
+    "start" : 1670045101049,
+    "stop" : 1670045102331,
+    "duration" : 1282
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8dbab30d486803c0",
+  "name" : "GET - Tentar listar usuario por email inexistente",
+  "time" : {
+    "start" : 1670045088104,
+    "stop" : 1670045088364,
+    "duration" : 260
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec2d24bf4988c21b",
+  "name" : "PUT - Tentar atualizar candidato com email em branco",
+  "time" : {
+    "start" : 1670045065771,
+    "stop" : 1670045066199,
+    "duration" : 428
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d11151ee708f3c7",
+  "name" : "Contrato - Validar contrato get candidato findbyemail",
+  "time" : {
+    "start" : 1670045100051,
+    "stop" : 1670045100474,
+    "duration" : 423
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9cd65af82028a6d",
+  "name" : "DELETE - Deletar entrevista com id inexistente",
+  "time" : {
+    "start" : 1670045084285,
+    "stop" : 1670045084538,
+    "duration" : 253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56724a2645f37a9d",
+  "name" : "PUT - Tentar atualizar usuario passando trilha errada",
+  "time" : {
+    "start" : 1670045092973,
+    "stop" : 1670045093996,
+    "duration" : 1023
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc0dc1511e23e946",
+  "name" : "PUT - Atualizar usuario",
+  "time" : {
+    "start" : 1670045091925,
+    "stop" : 1670045092971,
+    "duration" : 1046
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d171958f26e76b1d",
+  "name" : "DELETE - Tentar deletar usuario inexistente do sistema",
+  "time" : {
+    "start" : 1670045067405,
+    "stop" : 1670045067655,
+    "duration" : 250
   },
   "status" : "passed",
   "severity" : "normal"

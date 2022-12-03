@@ -59,12 +59,17 @@ context('Candidato-Controller', () => {
             .feature('GET/candidato/listar-candidato-principal-por-nome-ou-por-trilha')
             loginService.Login()
             .then((login) => {
-                candidatoService.GETcandidatoListaPrincipal("Chico duarte", "QA", login.body)
+                candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', login.body).then((response) => {
+                    cy.wrap(response.body).as('candidato')
+                })
+                cy.get('@candidato').then(candidato => {candidatoService.GETcandidatoListaPrincipal(candidato.nomeCompleto, candidato.trilha.nome, login.body)
                     .should((response) => {
                         expect(response.status).to.eq(200);
                         expect(response.body.elementos).that.is.not.empty;
                     })
             })
+            cy.get('@candidato').then(candidato => candidatoService.DELETEfisicoCandidatoRequest(candidato.idCandidato, login.body))
+        })
     });
 
 //////////////   GET-NEGATIVOS   //////////////
