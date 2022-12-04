@@ -1,7 +1,6 @@
 {
   "name": "back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "cy:run": "npx cypress run --config video=false --env allure=true",
@@ -26,5 +25,14 @@
   },
   "dependencies": {
     "cypress-localstorage-commands": "^2.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietroking/DBCFaceToFaceBack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pietroking/DBCFaceToFaceBack/issues"
+  },
+  "homepage": "https://github.com/pietroking/DBCFaceToFaceBack#readme",
+  "description": ""
 }
