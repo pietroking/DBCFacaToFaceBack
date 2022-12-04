@@ -1,0 +1,277 @@
+{
+  "uid" : "276f8a4dc995197c",
+  "name" : "Contrato - Validar contrato get candidato lista principal",
+  "fullName" : "Contrato - Validar contrato get candidato lista principal",
+  "historyId" : "5e8c8a5461279849d622ea670fad7786",
+  "time" : {
+    "start" : 1670137760379,
+    "stop" : 1670137761153,
+    "duration" : 774
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670137760385,
+        "stop" : 1670137760582,
+        "duration" : 197
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+        "time" : {
+          "start" : 1670137760385,
+          "stop" : 1670137760581,
+          "duration" : 196
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670137760581,
+          "stop" : 1670137760581,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670137760581,
+          "stop" : 1670137760582,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato",
+      "time" : {
+        "start" : 1670137760583,
+        "stop" : 1670137760668,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670137760668,
+        "stop" : 1670137760668,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670137760668,
+        "stop" : 1670137760669,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato/listar-candidato-principal-por-nome-ou-por-trilha",
+      "time" : {
+        "start" : 1670137760670,
+        "stop" : 1670137760764,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670137760764,
+        "stop" : 1670137760764,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670137760764,
+        "stop" : 1670137760765,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "validaContrato (\"getCandidatoListarPrincipal.contrato\"; \"Object [Object: null prototype] { body: Object [Object: null prototype] { totalElementos: 1, quantidadePaginas: 1, pagina: 0, tamanho: 20, elementos: [Array] }, headers: Object [Object: null prototype] { date: 'Sun, 04 Dec 2022 07:05:44 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', connection: 'keep-alive', vary: 'Origin, Access-Control-Request-Method, A'... 29 more characters, 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'cache-control': 'no-cache, no-store, max-age=0, must-reva'... 6 more characters, pragma: 'no-cache', expires: '0', 'access-control-allow-origin': '*', 'access-control-allow-credentials': 'true', 'access-control-allow-methods': 'GET, PUT, POST, DELETE, PATCH, OPTIONS', 'access-control-allow-headers': 'DNT,Keep-Alive,User-Agent,X-Requested-Wi'... 67 more characters, 'access-control-max-age': '1728000' }, status: 200, statusText: 'OK', isOkStatusCode: true, requestHeaders: Object [Object: null prototype] { Connection: 'keep-alive', authorization: 'eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJmYWNldG9'... 229 more characters, 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64'... 104 more characters, accept: '*/*', cookie: 'JSESSIONID=E0BBE07234991CAED280E76C98897'... 3 more characters, 'accept-encoding': 'gzip, deflate' }, duration: 91, allRequestResponses: [ [Object] ] }\")",
+      "time" : {
+        "start" : 1670137760766,
+        "stop" : 1670137760773,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture (\"getCandidatoListarPrincipal.contrato\")",
+        "time" : {
+          "start" : 1670137760766,
+          "stop" : 1670137760771,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/candidato/delete-fisico/368",
+      "time" : {
+        "start" : 1670137760774,
+        "stop" : 1670137761152,
+        "duration" : 378
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670137761152,
+        "stop" : 1670137761152,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670137761152,
+        "stop" : 1670137761152,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 15,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contrato GET/candidato"
+  }, {
+    "name" : "epic",
+    "value" : "Contrato candidato"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "276f8a4dc995197c.json",
+  "parameterValues" : [ ]
+}

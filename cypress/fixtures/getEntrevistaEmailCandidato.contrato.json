@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "required": [
+        "candidatoEmail",
+        "usuarioEmail",
+        "dataEntrevista",
+        "cidade",
+        "estado",
+        "observacoes",
+        "idEntrevista",
+        "candidatoDTO",
+        "usuarioDTO",
+        "legenda"
+    ],
+    "properties": {
+        "candidatoEmail": {
+            "type": "null"
+        },
+        "usuarioEmail": {
+            "type": "null"
+        },
+        "dataEntrevista": {
+            "type": "string"
+        },
+        "cidade": {
+            "type": "string"
+        },
+        "estado": {
+            "type": "string"
+        },
+        "observacoes": {
+            "type": "string"
+        },
+        "idEntrevista": {
+            "type": "number"
+        },
+        "candidatoDTO": {
+            "type": "null"
+        },
+        "usuarioDTO": {
+            "type": "null"
+        },
+        "legenda": {
+            "type": "string"
+        }
+    }
+}

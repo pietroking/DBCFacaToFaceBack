@@ -29,38 +29,32 @@ context('Contrato GET/candidato', () => {
         })
     });
 
-    // it.only('Contrato - Validar contrato get candidato lista principal', () => {
-    //     cy.allure().epic('Contrato candidato');
-    //     cy.login()
-    //     .then((response) => {
-    //         candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((candidato) => {
-    //             candidatoService.contratoGetCandidatoListaPrincipal('getCandidatoListarPrincipal.contrato', candidato.body.nomeCompleto, candidato.body.trilha.nome, response.body)
-    //             candidatoService.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, response.body)
-    //         })
-    //     })
-    // });
+    it('Contrato - Validar contrato get candidato lista principal', () => {
+        cy.allure().epic('Contrato candidato');
+        cy.login()
+        .then((response) => {
+            candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((candidato) => {
+                candidatoService.contratoGetCandidatoListaPrincipal('getCandidatoListarPrincipal.contrato', candidato.body.nomeCompleto, candidato.body.trilha.nome, response.body)
+                candidatoService.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, response.body)
+            })
+        })
+    });
 
-    // it('Contrato - Validar contrato get candidato lista cadastro', () => {
+    // it.only('Contrato - Validar contrato get candidato lista cadastro', () => {
     //     cy.allure().epic('Contrato candidato');
     //     cy.login()
     //     .then((response) => {
-    //         candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((candidato) => {
-    //             candidatoService.contratoGetCandidatoListaCadastro('getCandidatoListarCadastro.contrato', candidato.body.nomeCompleto, candidato.body.trilha.nome, response.body)
-    //             candidatoService.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, response.body)
-    //         })
+    //         candidatoService.contratoGetCandidatoListaCadastro('getCandidatoListarCadastro.contrato', 'Julio Rocha', 'BACKEND', response.body)
     //     })
     // });
     
-    // it('Contrato - Validar contrato get candidato curriculo', () => {
-    //     cy.allure().epic('Contrato candidato');
-    //     cy.login()
-    //     .then((response) => {
-    //         candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((candidato) => {
-    //             candidatoService.contratoGetCandidatoCurriculo('getCandidatoCurriculo.contrato', candidato.body.email, response.body)
-    //             candidatoService.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, response.body)
-    //         })
-    //     })
-    // });
+    it('Contrato - Validar contrato get candidato curriculo', () => {
+        cy.allure().epic('Contrato candidato');
+        cy.login()
+        .then((response) => {
+            candidatoService.contratoGetCandidatoCurriculo('getCandidatoCurriculo.contrato', 'julio.gabriel@dbccompany.com.br', response.body)
+        })
+    });
 
     // it('Contrato - Validar contrato get candidato imagem', () => {
     //     cy.allure().epic('Contrato candidato');
@@ -131,24 +125,38 @@ context('Contrato GET/usuario', () => {
 })
 
 context('Contrato GET/entrevista', () => {
-    // it('Contrato - Validar contrato get entrevista', () => {
-    //     cy.allure().epic('Contrato entrevista');
-    //     cy.login()
-    //     .then((response) => {
-    //         entrevistaService.contratoGetEntrevista('getEntrevista.contrato', response.body)})
-    // });
+    it('Contrato - Validar contrato get entrevista', () => {
+        cy.allure().epic('Contrato entrevista');
+        cy.login()
+        .then((response) => {
+            entrevistaService.contratoGetEntrevista('getEntrevista.contrato', response.body)})
+    });
 
-    // it('Contrato - Validar contrato get entrevista por mes/ano', () => {
-    //     cy.allure().epic('Contrato entrevista');
-    //     cy.login()
-    //     .then((response) => {
-    //         candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((candidato) => {
-    //             entrevistaService.POSTentrevistaRequest(entrevistaTest, response.body).then((entrevista) => {
-    //                 entrevistaService.contratoGetEntrevistaMes('getListarPorMes.contrato', response.body, 12, 2022)
-    //                 entrevistaService.DELETEentrevistaRequest(entrevista.body.idEntrevista, response.body)
-    //                 candidatoService.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, response.body)
-    //             })
-    //         })
-    //     })    
-    // });
+    it('Contrato - Validar contrato get entrevista por mes/ano', () => {
+        cy.allure().epic('Contrato entrevista');
+        cy.login()
+        .then((response) => {
+            candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((candidato) => {
+                entrevistaService.POSTentrevistaRequest(entrevistaTest, response.body).then((entrevista) => {
+                    entrevistaService.contratoGetEntrevistaMes('getListarPorMes.contrato', response.body, 12, 2022)
+                    entrevistaService.DELETEentrevistaRequest(entrevista.body.idEntrevista, response.body)
+                    candidatoService.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, response.body)
+                })
+            })
+        })    
+    });
+
+    it('Contrato - Validar contrato get entrevista por email candidato', () => {
+        cy.allure().epic('Contrato entrevista');
+        cy.login()
+        .then((response) => {
+            candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', response.body).then((candidato) => {
+                entrevistaService.POSTentrevistaRequest(entrevistaTest, response.body).then((entrevista) => {
+                    entrevistaService.contratoGetEntrevistaEmailCandidato('getEntrevistaEmailCandidato.contrato', response.body, candidato.body.email)
+                    entrevistaService.DELETEentrevistaRequest(entrevista.body.idEntrevista, response.body)
+                    candidatoService.DELETEfisicoCandidatoRequest(candidato.body.idCandidato, response.body)
+                })
+            })
+        })
+    });
 })

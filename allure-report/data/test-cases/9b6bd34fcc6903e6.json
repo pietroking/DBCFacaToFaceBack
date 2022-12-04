@@ -1,0 +1,214 @@
+{
+  "uid" : "9b6bd34fcc6903e6",
+  "name" : "DELETE - Tentar tornar usuario inexistente inativo",
+  "fullName" : "DELETE - Tentar tornar usuario inexistente inativo",
+  "historyId" : "eff51913e1551bef2e2c7445fea2325d",
+  "time" : {
+    "start" : 1670137756074,
+    "stop" : 1670137756342,
+    "duration" : 268
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+      "time" : {
+        "start" : 1670137756082,
+        "stop" : 1670137756269,
+        "duration" : 187
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670137756269,
+        "stop" : 1670137756269,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670137756269,
+        "stop" : 1670137756270,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "DELETE 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/usuario/9999",
+      "time" : {
+        "start" : 1670137756271,
+        "stop" : 1670137756339,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670137756339,
+        "stop" : 1670137756339,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670137756339,
+        "stop" : 1670137756342,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **400** to equal **400**",
+      "time" : {
+        "start" : 1670137756342,
+        "stop" : 1670137756342,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "400"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **Usuário com id 9999 não foi encontrado.** to equal **Usuário com id 9999 não foi encontrado.**",
+      "time" : {
+        "start" : 1670137756342,
+        "stop" : 1670137756342,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Usuário com id 9999 não foi encontrado."
+      }, {
+        "name" : "expected",
+        "value" : "Usuário com id 9999 não foi encontrado."
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Usuario-Controller"
+  }, {
+    "name" : "epic",
+    "value" : "Usuario-Controller"
+  }, {
+    "name" : "feature",
+    "value" : "DELETE/usuario/{idUsuario}"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "36a1a7e42ae4e9c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670133451521,
+          "stop" : 1670133451887,
+          "duration" : 366
+        }
+      }, {
+        "uid" : "3ac8a289f34ba248",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670122096179,
+          "stop" : 1670122096433,
+          "duration" : 254
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9b6bd34fcc6903e6.json",
+  "parameterValues" : [ ]
+}

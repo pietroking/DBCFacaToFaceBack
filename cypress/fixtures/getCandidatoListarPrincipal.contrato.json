@@ -29,7 +29,8 @@
                     "nomeCompleto",
                     "email",
                     "notaProva",
-                    "trilha"
+                    "trilha",
+                    "edicao"
                 ],
                 "properties": {
                     "idCandidato": {
@@ -45,6 +46,9 @@
                         "type": "number"
                     },
                     "trilha": {
+                        "type": "string"
+                    },
+                    "edicao": {
                         "type": "string"
                     }
                 }

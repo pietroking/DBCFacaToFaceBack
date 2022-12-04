@@ -1,0 +1,214 @@
+{
+  "uid" : "e2a5a4a879c6201f",
+  "name" : "POST - Tentar criar entrevista passando candidato invalido",
+  "fullName" : "POST - Tentar criar entrevista passando candidato invalido",
+  "historyId" : "7754902f82a63a649394355c5eedf26b",
+  "time" : {
+    "start" : 1670137702821,
+    "stop" : 1670137703437,
+    "duration" : 616
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+      "time" : {
+        "start" : 1670137702827,
+        "stop" : 1670137703188,
+        "duration" : 361
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670137703188,
+        "stop" : 1670137703188,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670137703188,
+        "stop" : 1670137703189,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/entrevista/marcar-entrevista",
+      "time" : {
+        "start" : 1670137703189,
+        "stop" : 1670137703434,
+        "duration" : 245
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670137703434,
+        "stop" : 1670137703435,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670137703435,
+        "stop" : 1670137703437,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **400** to equal **400**",
+      "time" : {
+        "start" : 1670137703437,
+        "stop" : 1670137703437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "400"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **Candidato com o e-mail especificado não existe** to equal **Candidato com o e-mail especificado não existe**",
+      "time" : {
+        "start" : 1670137703437,
+        "stop" : 1670137703437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Candidato com o e-mail especificado não existe"
+      }, {
+        "name" : "expected",
+        "value" : "Candidato com o e-mail especificado não existe"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Entrevista-Controller"
+  }, {
+    "name" : "epic",
+    "value" : "Entrevista-Controller"
+  }, {
+    "name" : "feature",
+    "value" : "POST/entrevista"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "38b893eef22f3deb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670133426643,
+          "stop" : 1670133426890,
+          "duration" : 247
+        }
+      }, {
+        "uid" : "3bdef5d9196aa0cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670122074802,
+          "stop" : 1670122075063,
+          "duration" : 261
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e2a5a4a879c6201f.json",
+  "parameterValues" : [ ]
+}

@@ -33,14 +33,15 @@
                     "observacoes",
                     "idEntrevista",
                     "candidatoDTO",
-                    "usuarioDTO"
+                    "usuarioDTO",
+                    "legenda"
                 ],
                 "properties": {
                     "candidatoEmail": {
-                        "type": "string"
+                        "type": "null"
                     },
                     "usuarioEmail": {
-                        "type": "string"
+                        "type": "null"
                     },
                     "dataEntrevista": {
                         "type": "string"
@@ -112,7 +113,7 @@
                                 "type": "number"
                             },
                             "linguagens": {
-                                "type": "array",
+                                "type": ["array", "null"],
                                 "items": {
                                     "type": "object",
                                     "required": [
@@ -126,7 +127,7 @@
                                 }
                             },
                             "observacoes": {
-                                "type": "string"
+                                "type": ["null", "string"]
                             },
                             "ativo": {
                                 "type": "string"
@@ -200,6 +201,9 @@
                                 "type": "string"
                             }
                         }
+                    },
+                    "legenda": {
+                        "type": "string"
                     }
                 }
             }

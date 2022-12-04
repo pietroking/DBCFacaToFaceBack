@@ -1,5 +1,5 @@
 {
-  "total" : 5,
+  "total" : 6,
   "items" : [ {
     "uid" : "c63b552092d98022ca7e962c8da03d9f",
     "name" : "Usuario-Controller",
@@ -51,9 +51,20 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 2
+      "total" : 4
+    }
+  }, {
+    "uid" : "3fd3affd9f87ef582aab6556af8eefc3",
+    "name" : "Contrato entrevista",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
     }
   } ]
 }
