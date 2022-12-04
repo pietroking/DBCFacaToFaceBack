@@ -1,0 +1,244 @@
+{
+  "uid" : "a0f37d398507d3",
+  "name" : "GET - Listar usuarios",
+  "fullName" : "GET - Listar usuarios",
+  "historyId" : "c148d5a5dd058d6c03f758b323a01abe",
+  "time" : {
+    "start" : 1670122083234,
+    "stop" : 1670122083540,
+    "duration" : 306
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/auth/fazer-login",
+      "time" : {
+        "start" : 1670122083244,
+        "stop" : 1670122083438,
+        "duration" : 194
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670122083438,
+        "stop" : 1670122083438,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670122083438,
+        "stop" : 1670122083439,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/facetoface-back/usuario",
+      "time" : {
+        "start" : 1670122083439,
+        "stop" : 1670122083535,
+        "duration" : 96
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "as (\"response\")",
+      "time" : {
+        "start" : 1670122083535,
+        "stop" : 1670122083535,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get @response",
+      "time" : {
+        "start" : 1670122083535,
+        "stop" : 1670122083540,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670122083540,
+        "stop" : 1670122083540,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **[ Array(10) ]** not to be empty",
+      "time" : {
+        "start" : 1670122083540,
+        "stop" : 1670122083540,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  {\n    \"nomeCompleto\": \"ADMIN admin\",\n    \"cidade\": \"PORTO ALEGRE\",\n    \"estado\": \"RIO GRANDE DO SUL\",\n    \"email\": \"rolefront.adm@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_ADMIN\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 1,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"GESTAO\",\n    \"cidade\": \"PORTO ALEGRE\",\n    \"estado\": \"RIO GRANDE DO SUL\",\n    \"email\": \"rolefront_gestao@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_GESTAO\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 2,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"INSTRUTOR\",\n    \"cidade\": \"PORTO ALEGRE\",\n    \"estado\": \"RIO GRANDE DO SUL\",\n    \"email\": \"rolefront_instrutor@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_INSTRUTOR\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 3,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"Ályson alyson\",\n    \"cidade\": \"PORTO ALEGRE\",\n    \"estado\": \"RIO GRANDE DO SUL\",\n    \"email\": \"julio.gabriel@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_GESTAO\"\n      },\n      {\n        \"nome\": \"ROLE_ADMIN\"\n      },\n      {\n        \"nome\": \"ROLE_INSTRUTOR\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 4,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"Alyson Campos\",\n    \"cidade\": \"Recife\",\n    \"estado\": \"Pernambuco\",\n    \"email\": \"alyson.siqueira@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_GESTAO\"\n      },\n      {\n        \"nome\": \"ROLE_ADMIN\"\n      },\n      {\n        \"nome\": \"ROLE_INSTRUTOR\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 88,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"teste teste\",\n    \"cidade\": \"teste\",\n    \"estado\": \"teste\",\n    \"email\": \"teste@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_GESTAO\"\n      },\n      {\n        \"nome\": \"ROLE_ADMIN\"\n      },\n      {\n        \"nome\": \"ROLE_INSTRUTOR\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 6,\n    \"genero\": \"OUTRO\"\n  },\n  {\n    \"nomeCompleto\": \"Priscila Matos\",\n    \"cidade\": \"Canoas\",\n    \"estado\": \"Rio Grande do Sul\",\n    \"email\": \"priscila.matos@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"QA\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_INSTRUTOR\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 7,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"Priscila Matos\",\n    \"cidade\": \"Canoas\",\n    \"estado\": \"Rio Grande do Sul\",\n    \"email\": \"matheus.goncalves@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_INSTRUTOR\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 92,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"yuri nunes atzler\",\n    \"cidade\": \"faxinal do soturno\",\n    \"estado\": \"rs\",\n    \"email\": \"yuri.atzler@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_GESTAO\"\n      },\n      {\n        \"nome\": \"ROLE_ADMIN\"\n      },\n      {\n        \"nome\": \"ROLE_INSTRUTOR\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 97,\n    \"genero\": \"MASCULINO\"\n  },\n  {\n    \"nomeCompleto\": \"Gicelly Oliveira\",\n    \"cidade\": \"Igarassu\",\n    \"estado\": \"Pernambuco\",\n    \"email\": \"gicelly.oliveira@dbccompany.com.br\",\n    \"trilha\": {\n      \"nome\": \"COLABORADOR\"\n    },\n    \"perfis\": [\n      {\n        \"nome\": \"ROLE_INSTRUTOR\"\n      }\n    ],\n    \"ativo\": \"T\",\n    \"idUsuario\": 96,\n    \"genero\": \"MASCULINO\"\n  }\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **julio.gabriel@dbccompany.com.br** to equal **julio.gabriel@dbccompany.com.br**",
+      "time" : {
+        "start" : 1670122083540,
+        "stop" : 1670122083540,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "julio.gabriel@dbccompany.com.br"
+      }, {
+        "name" : "expected",
+        "value" : "julio.gabriel@dbccompany.com.br"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **Ályson alyson** to equal **Ályson alyson**",
+      "time" : {
+        "start" : 1670122083540,
+        "stop" : 1670122083540,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Ályson alyson"
+      }, {
+        "name" : "expected",
+        "value" : "Ályson alyson"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **[ Array(3) ]** not to be empty",
+      "time" : {
+        "start" : 1670122083540,
+        "stop" : 1670122083540,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  {\n    \"nome\": \"ROLE_GESTAO\"\n  },\n  {\n    \"nome\": \"ROLE_ADMIN\"\n  },\n  {\n    \"nome\": \"ROLE_INSTRUTOR\"\n  }\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Usuario-Controller"
+  }, {
+    "name" : "epic",
+    "value" : "Usuario-Controller"
+  }, {
+    "name" : "feature",
+    "value" : "GET/usuario"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a0f37d398507d3.json",
+  "parameterValues" : [ ]
+}

@@ -171,6 +171,32 @@ context('Candidato-Controller', () => {
                     })
             })
     });
+
+    it('POST - Tentar criar candidato logando com role de instrutor', () => {
+        cy.allure()
+            .epic('Candidato-Controller')
+            .feature('POST/candidato')
+            loginService.LoginINSTRUTOR()
+            .then((login) => {
+                candidatoService.POSTcandidatoRequest(candidatoTest, 'OUTRO', login.body)
+                    .should((response) => {
+                        expect(response.status).to.eq(403);
+                    })
+            })
+    });
+
+    it('POST - Tentar criar candidato logando com role de ADM', () => {
+        cy.allure()
+            .epic('Candidato-Controller')
+            .feature('POST/candidato')
+            loginService.LoginADM()
+            .then((login) => {
+                candidatoService.POSTcandidatoRequest(candidatoTest, 'OUTRO', login.body)
+                    .should((response) => {
+                        expect(response.status).to.eq(403);
+                    })
+            })
+    });
 //////////////   PUT-POSITIVOS   //////////////
     it('PUT - Atualizar candidato', () => {
         cy.allure()

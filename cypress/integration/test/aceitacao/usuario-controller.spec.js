@@ -25,7 +25,7 @@ context('Usuario-Controller', () => {
                         expect(response.status).to.eq(200);
                         expect(response.body).that.is.not.empty;
                         expect(response.body.email).to.eq('julio.gabriel@dbccompany.com.br');
-                        expect(response.body.nomeCompleto).to.eq('Julio');
+                        expect(response.body.nomeCompleto).to.eq('Ályson alyson');
                         expect(response.body.perfis).that.is.not.empty;
                     })
             })
@@ -42,7 +42,7 @@ context('Usuario-Controller', () => {
                     expect(response.status).to.eq(200);
                     expect(response.body.elementos).that.is.not.empty;
                     expect(response.body.elementos[3].email).to.eq('julio.gabriel@dbccompany.com.br');
-                    expect(response.body.elementos[3].nomeCompleto).to.eq('Julio');
+                    expect(response.body.elementos[3].nomeCompleto).to.eq('Ályson alyson');
                     expect(response.body.elementos[3].perfis).that.is.not.empty;
                 })
             })
@@ -58,7 +58,7 @@ context('Usuario-Controller', () => {
                     .should((response) => {
                         expect(response.status).to.eq(200);
                         expect(response.body.email).to.eq('julio.gabriel@dbccompany.com.br');
-                        expect(response.body.nomeCompleto).to.eq('Julio');
+                        expect(response.body.nomeCompleto).to.eq('Ályson alyson');
                         expect(response.body.cidade).to.eq('PORTO ALEGRE');
                         expect(response.body.estado).to.eq('RIO GRANDE DO SUL');
                         expect(response.body.trilha.nome).to.eq('COLABORADOR');
@@ -78,7 +78,7 @@ context('Usuario-Controller', () => {
                     .should((response) => {
                         expect(response.status).to.eq(200);
                         expect(response.body.email).to.eq('julio.gabriel@dbccompany.com.br');
-                        expect(response.body.nomeCompleto).to.eq('Julio');
+                        expect(response.body.nomeCompleto).to.eq('Ályson alyson');
                         expect(response.body.cidade).to.eq('PORTO ALEGRE');
                         expect(response.body.estado).to.eq('RIO GRANDE DO SUL');
                         expect(response.body.trilha.nome).to.eq('COLABORADOR');
@@ -94,7 +94,7 @@ context('Usuario-Controller', () => {
             .feature('GET/usuario/findbynomecompleto')
             loginService.Login()
             .then((login) => {
-                usuarioService.GETusuarioNomeRequest('Julio', login.body)
+                usuarioService.GETusuarioNomeRequest('Ályson alyson', login.body)
                     .should((response) => {
                         expect(response.status).to.eq(200);
                         expect(response.body.elementos).that.is.not.empty;
@@ -222,6 +222,32 @@ context('Usuario-Controller', () => {
                     .should((response) => {
                         expect(response.status).to.eq(400);
                         expect(response.body.message).to.eq(`Perfil não encontrado!`)
+                    })
+            })
+    });
+
+    it('POST - Tentar criar usuario logando com role de instrutor', () => {
+        cy.allure()
+            .epic('Usuario-Controller')
+            .feature('POST/usuario')
+            loginService.LoginINSTRUTOR()
+            .then((login) => {
+                usuarioService.POSTusuarioRequest(usuarioTest, 'MASCULINO', login.body)
+                    .should((response) => {
+                        expect(response.status).to.eq(403);
+                    })
+            })
+    });
+
+    it('POST - Tentar criar usuario logando com role de gestao', () => {
+        cy.allure()
+            .epic('Usuario-Controller')
+            .feature('POST/usuario')
+            loginService.LoginGESTAO()
+            .then((login) => {
+                usuarioService.POSTusuarioRequest(usuarioTest, 'MASCULINO', login.body)
+                    .should((response) => {
+                        expect(response.status).to.eq(403);
                     })
             })
     });

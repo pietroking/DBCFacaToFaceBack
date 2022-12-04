@@ -62,7 +62,7 @@ context('Entrevista-Controller', () => {
                         expect(response.body.candidatoDTO.notaProva).to.eq(10);
                         expect(response.body.candidatoDTO.linguagens).that.is.not.empty;
                         expect(response.body.usuarioDTO.email).to.eq('julio.gabriel@dbccompany.com.br');
-                        expect(response.body.usuarioDTO.nomeCompleto).to.eq('Julio');
+                        expect(response.body.usuarioDTO.nomeCompleto).to.eq('Ályson alyson');
                         expect(response.body.usuarioDTO.cidade).to.eq('PORTO ALEGRE');
                         expect(response.body.usuarioDTO.estado).to.eq('RIO GRANDE DO SUL');
                         expect(response.body.usuarioDTO.trilha.nome).to.eq('COLABORADOR');
@@ -154,6 +154,19 @@ context('Entrevista-Controller', () => {
                 cy.get('@candidato').then(candidato => candidatoService.DELETEfisicoCandidatoRequest(candidato.idCandidato, login.body))
             })
     });
+
+    it('POST - Tentar criar entrevista logando com role ADM', () => {
+        cy.allure()
+            .epic('Entrevista-Controller')
+            .feature('POST/entrevista')
+            loginService.LoginADM()
+            .then((login) => {
+                entrevistaService.POSTentrevistaRequest(entrevistaErrorUsuarioTest, login.body)
+                    .should((response) => {
+                        expect(response.status).to.eq(403);
+                    })
+            }) 
+    });
 //////////////   PUT-POSITIVOS   //////////////
     it('PUT - Atualizar entrevista', () => {
         cy.allure()
@@ -179,7 +192,7 @@ context('Entrevista-Controller', () => {
                         expect(response.body.candidatoDTO.notaProva).to.eq(10);
                         expect(response.body.candidatoDTO.linguagens).that.is.not.empty;
                         expect(response.body.usuarioDTO.email).to.eq('julio.gabriel@dbccompany.com.br');
-                        expect(response.body.usuarioDTO.nomeCompleto).to.eq('Julio');
+                        expect(response.body.usuarioDTO.nomeCompleto).to.eq('Ályson alyson');
                         expect(response.body.usuarioDTO.cidade).to.eq('PORTO ALEGRE');
                         expect(response.body.usuarioDTO.estado).to.eq('RIO GRANDE DO SUL');
                         expect(response.body.usuarioDTO.trilha.nome).to.eq('COLABORADOR');
@@ -206,6 +219,31 @@ context('Entrevista-Controller', () => {
                     })
             })
     });
+
+    //TESTE EXPLORATÓRIO
+    // it.only('PUT - Tentar atualizar entrevista logando com role instrutor', () => {
+    //     cy.allure()
+    //         .epic('Entrevista-Controller')
+    //         .feature('PUT/entrevista')
+    //         loginService.Login()
+    //         .then((login) => {
+    //             candidatoService.POSTcandidatoRequest(candidatoTest, 'MASCULINO', login.body).then((response) => {
+    //                 cy.wrap(response.body).as('candidato')
+    //             })
+    //             loginService.LoginINSTRUTOR()
+    //             .then((instrutor) => {
+    //                 entrevistaService.POSTentrevistaRequest(entrevistaTest, instrutor.body).then((response) => {
+    //                 cy.wrap(response.body).as('entrevista')
+    //                 })
+    //                 cy.get('@entrevista').then(entrevista =>  entrevistaService.PUTentrevistaRequest(entrevistaAtualizadaTest, entrevista.idEntrevista, 'PENDENTE', login.body))
+    //                 .should((response) => {
+    //                     expect(response.status).to.eq(403);
+    //                 })
+    //             })
+    //             cy.get('@entrevista').then(entrevista => entrevistaService.DELETEentrevistaRequest(entrevista.idEntrevista, login.body))
+    //             cy.get('@candidato').then(candidato => candidatoService.DELETEfisicoCandidatoRequest(candidato.idCandidato, login.body))
+    //         })
+    // });
 //////////////   DELETE-POSITIVOS   //////////////
     it('DELETE - Deletar entrevista', () => {
         cy.allure()
